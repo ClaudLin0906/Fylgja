@@ -39,8 +39,6 @@ class MainTabBarController: UITabBarController {
         tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
         tabBarAppearance.configureWithOpaqueBackground()
         if #available(iOS 15.0, *) {
-//            tabBarAppearance.stackedLayoutAppearance.selected.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 15)
-//            tabBarAppearance.stackedLayoutAppearance.normal.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 15)
             tabBar.scrollEdgeAppearance = tabBarAppearance
         }
         tabBar.standardAppearance = tabBarAppearance

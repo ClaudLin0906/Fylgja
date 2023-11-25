@@ -29,6 +29,8 @@
 		598C11852B11FB35008B6005 /* WaitingListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C11842B11FB35008B6005 /* WaitingListVC.swift */; };
 		598C11872B11FB3C008B6005 /* WaitingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598C11862B11FB3C008B6005 /* WaitingList.storyboard */; };
 		598C118B2B11FC29008B6005 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C118A2B11FC29008B6005 /* MainTabBarController.swift */; };
+		598C118D2B120183008B6005 /* VerificationCodeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C118C2B120183008B6005 /* VerificationCodeTextFieldView.swift */; };
+		598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598C118E2B1201D4008B6005 /* VerificationCodeTextFieldView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		598C11842B11FB35008B6005 /* WaitingListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingListVC.swift; sourceTree = "<group>"; };
 		598C11862B11FB3C008B6005 /* WaitingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WaitingList.storyboard; sourceTree = "<group>"; };
 		598C118A2B11FC29008B6005 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		598C118C2B120183008B6005 /* VerificationCodeTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeTextFieldView.swift; sourceTree = "<group>"; };
+		598C118E2B1201D4008B6005 /* VerificationCodeTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationCodeTextFieldView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 			children = (
 				598C117F2B11F9B1008B6005 /* VerificationCodeVC.swift */,
 				598C11812B11F9BD008B6005 /* VerificationCode.storyboard */,
+				598C118C2B120183008B6005 /* VerificationCodeTextFieldView.swift */,
+				598C118E2B1201D4008B6005 /* VerificationCodeTextFieldView.xib */,
 			);
 			path = VerificationCode;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				598C11872B11FB3C008B6005 /* WaitingList.storyboard in Resources */,
 				598C11342B0A0120008B6005 /* Assets.xcassets in Resources */,
 				598C11742B11D334008B6005 /* Login.storyboard in Resources */,
+				598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */,
 				598C11322B0A011F008B6005 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +245,7 @@
 				598C11472B0A0C61008B6005 /* AskLocationPremissionVC.swift in Sources */,
 				598C11722B11D326008B6005 /* LoginVC.swift in Sources */,
 				598C112B2B0A011F008B6005 /* AppDelegate.swift in Sources */,
+				598C118D2B120183008B6005 /* VerificationCodeTextFieldView.swift in Sources */,
 				598C11432B0A0BBB008B6005 /* Extension.swift in Sources */,
 				598C113F2B0A0201008B6005 /* LogoAnimationVC.swift in Sources */,
 				598C11852B11FB35008B6005 /* WaitingListVC.swift in Sources */,

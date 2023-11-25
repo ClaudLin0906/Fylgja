@@ -8,10 +8,19 @@
 import UIKit
 
 class VerificationCodeVC: UIViewController {
+    
+    @IBOutlet weak var firstTextFieldView: VerificationCodeTextFieldView!
+    
+    @IBOutlet weak var secondTextFieldView: VerificationCodeTextFieldView!
+    
+    @IBOutlet weak var thirdTextFieldView: VerificationCodeTextFieldView!
+    
+    @IBOutlet weak var fourthTextFieldView: VerificationCodeTextFieldView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     

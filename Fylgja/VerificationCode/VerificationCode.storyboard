@@ -9,16 +9,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Verification CodeVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerificationCode" id="Y6W-OH-hqX" customClass="VerificationCodeVC" customModule="Fylgja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sb9-g0-xd4">
+                                <rect key="frame" x="78.666666666666671" y="413.66666666666669" width="235.66666666666663" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wpu-ct-vnJ" customClass="VerificationCodeTextFieldView" customModule="Fylgja" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="50"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSD-OI-Cch" customClass="VerificationCodeTextFieldView" customModule="Fylgja" customModuleProvider="target">
+                                        <rect key="frame" x="63.999999999999986" y="0.0" width="44" height="50"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaL-CV-i3S" customClass="VerificationCodeTextFieldView" customModule="Fylgja" customModuleProvider="target">
+                                        <rect key="frame" x="127.99999999999999" y="0.0" width="43.666666666666671" height="50"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuG-R1-k4N" customClass="VerificationCodeTextFieldView" customModule="Fylgja" customModuleProvider="target">
+                                        <rect key="frame" x="191.66666666666663" y="0.0" width="44" height="50"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PBN-XA-CIB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sb9-g0-xd4" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="8bP-VW-zER"/>
+                            <constraint firstItem="Sb9-g0-xd4" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.6" id="qe5-5A-CqC"/>
+                            <constraint firstItem="Sb9-g0-xd4" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="vbK-YM-OaQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstTextFieldView" destination="Wpu-ct-vnJ" id="8ox-Ww-Niq"/>
+                        <outlet property="fourthTextFieldView" destination="KuG-R1-k4N" id="yRZ-w2-zJz"/>
+                        <outlet property="secondTextFieldView" destination="jSD-OI-Cch" id="dSt-DY-fKt"/>
+                        <outlet property="thirdTextFieldView" destination="QaL-CV-i3S" id="dUX-gi-3fC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

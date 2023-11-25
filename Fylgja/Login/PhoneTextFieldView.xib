@@ -26,22 +26,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話號碼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOk-6c-UvS">
-                    <rect key="frame" x="10" y="64" width="118" height="130"/>
+                    <rect key="frame" x="20" y="64" width="68" height="130"/>
                     <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
                     <color key="textColor" systemColor="systemGrayColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCs-SC-gwO" userLabel="line">
-                    <rect key="frame" x="138" y="64" width="1" height="130"/>
+                    <rect key="frame" x="108" y="64" width="1" height="130"/>
                     <color key="backgroundColor" name="CommonColor"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="1" id="HrW-VE-t5k"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpH-Vd-AWz">
-                    <rect key="frame" x="149" y="64" width="234" height="130"/>
+                    <rect key="frame" x="129" y="64" width="254" height="130"/>
                     <color key="textColor" name="CommonColor"/>
-                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="50"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
@@ -50,16 +50,15 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lpH-Vd-AWz" secondAttribute="bottom" constant="5" id="9ie-bO-zkd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lpH-Vd-AWz" secondAttribute="trailing" constant="10" id="LeI-e6-gik"/>
-                <constraint firstItem="lpH-Vd-AWz" firstAttribute="leading" secondItem="MCs-SC-gwO" secondAttribute="trailing" constant="10" id="Lj2-43-Yyx"/>
+                <constraint firstItem="lpH-Vd-AWz" firstAttribute="leading" secondItem="MCs-SC-gwO" secondAttribute="trailing" constant="20" id="Lj2-43-Yyx"/>
                 <constraint firstItem="MCs-SC-gwO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="OHv-fJ-C4x"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TOk-6c-UvS" secondAttribute="bottom" constant="5" id="Ryx-aA-odS"/>
-                <constraint firstItem="TOk-6c-UvS" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.3" id="WEP-ls-iWD"/>
                 <constraint firstItem="TOk-6c-UvS" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Xga-MY-5HH"/>
                 <constraint firstItem="TOk-6c-UvS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="aVJ-79-dEq"/>
                 <constraint firstItem="lpH-Vd-AWz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="jvv-04-wH9"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MCs-SC-gwO" secondAttribute="bottom" constant="5" id="lie-wK-ouy"/>
-                <constraint firstItem="TOk-6c-UvS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="pzY-Bu-dSh"/>
-                <constraint firstItem="MCs-SC-gwO" firstAttribute="leading" secondItem="TOk-6c-UvS" secondAttribute="trailing" constant="10" id="zLS-yU-UNF"/>
+                <constraint firstItem="TOk-6c-UvS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="pzY-Bu-dSh"/>
+                <constraint firstItem="MCs-SC-gwO" firstAttribute="leading" secondItem="TOk-6c-UvS" secondAttribute="trailing" constant="20" id="zLS-yU-UNF"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-156.4885496183206" y="310.21126760563379"/>

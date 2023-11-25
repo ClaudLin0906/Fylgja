@@ -17,7 +17,10 @@ class LoginVC: UIViewController {
 
     @IBAction func tapLogin(_ sender:UIButton) {
         isLogin = true
-        self.dismiss(animated: true)
+        if let VC = UIStoryboard(name: "VerificationCode", bundle: nil).instantiateViewController(withIdentifier: "VerificationCode") as? VerificationCodeVC {
+            VC.modalPresentationStyle = .fullScreen
+            self.present(VC, animated: true)
+        }
     }
 
     @IBAction func guestLogin(_ sender:UIButton) {
