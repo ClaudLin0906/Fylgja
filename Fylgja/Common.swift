@@ -26,3 +26,21 @@ func getTopController() -> UIViewController? {
     return nil
 }
 
+func toPhoneFormat(_ phoneNumber:String) -> String {
+    guard validateCellPhone(phoneNumber) else { return "" }
+    var result = removeWhitespace(phoneNumber)
+    result = result.replacingOccurrences(of: "(\\d{4})(\\d{3})(\\d+)", with: "$1 $2 $3", options: .regularExpression, range: nil)
+    return result
+}
+
+func validateCellPhone(_ text:String) -> Bool{
+    let mobileReg = "^09\\d{8}$"
+    let resgextestMobile = NSPredicate(format: "SELF MATCHES %@", mobileReg).evaluate(with: text)
+    return resgextestMobile
+}
+
+func removeWhitespace(_ string: String) -> String {
+    let components = string.components(separatedBy: .whitespaces)
+    let filteredString = components.joined()
+    return filteredString
+}

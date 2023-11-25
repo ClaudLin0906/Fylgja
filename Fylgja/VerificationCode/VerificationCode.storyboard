@@ -17,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nql-3l-jaS">
+                                <rect key="frame" x="50" y="285.66666666666669" width="293" height="28"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sb9-g0-xd4">
                                 <rect key="frame" x="78.666666666666671" y="413.66666666666669" width="235.66666666666663" height="50"/>
                                 <subviews>
@@ -41,12 +47,16 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nql-3l-jaS" secondAttribute="trailing" constant="50" id="1gD-kF-Qo4"/>
+                            <constraint firstItem="Nql-3l-jaS" firstAttribute="bottom" secondItem="Sb9-g0-xd4" secondAttribute="top" constant="-100" id="3uK-Nm-EQB"/>
+                            <constraint firstItem="Nql-3l-jaS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="8KK-dF-PDt"/>
                             <constraint firstItem="Sb9-g0-xd4" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="8bP-VW-zER"/>
                             <constraint firstItem="Sb9-g0-xd4" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.6" id="qe5-5A-CqC"/>
                             <constraint firstItem="Sb9-g0-xd4" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="vbK-YM-OaQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alertLabel" destination="Nql-3l-jaS" id="JzZ-b5-rXL"/>
                         <outlet property="firstTextFieldView" destination="Wpu-ct-vnJ" id="8ox-Ww-Niq"/>
                         <outlet property="fourthTextFieldView" destination="KuG-R1-k4N" id="yRZ-w2-zJz"/>
                         <outlet property="secondTextFieldView" destination="jSD-OI-Cch" id="dSt-DY-fKt"/>

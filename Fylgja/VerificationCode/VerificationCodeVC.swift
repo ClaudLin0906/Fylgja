@@ -17,6 +17,9 @@ class VerificationCodeVC: UIViewController {
     
     @IBOutlet weak var fourthTextFieldView: VerificationCodeTextFieldView!
     
+    @IBOutlet weak var alertLabel:UILabel!
+    
+    var phoneNumber = "0932266860"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,7 @@ class VerificationCodeVC: UIViewController {
     }
     
     private func UIInit() {
+        alertLabel.text = "已發送驗證碼至 \(toPhoneFormat(phoneNumber))請留意簡訊並輸入4位驗證碼"
         firstTextFieldView.textField.delegate = self
         firstTextFieldView.textField.tag = 1
         secondTextFieldView.textField.delegate = self

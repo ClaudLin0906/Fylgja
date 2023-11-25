@@ -86,7 +86,7 @@ extension UIViewController {
             viewController = viewController?.parent
         }
         if viewController != nil {
-            return viewController as? UIViewController
+            return viewController
         }
         return nil
     }
