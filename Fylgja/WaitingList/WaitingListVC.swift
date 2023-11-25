@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  WaitingListVC.swift
 //  Fylgja
 //
 //  Created by 林書郁 on 2023/11/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class WaitingListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -21,7 +21,12 @@ class MainRootVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if LocationManager.shared.isLocationServicesEnabled() {
-            showLogin()
+            if !isLogin {
+                showLogin()
+            }else{
+                
+            }
+            
         } else {
             showAskLocationPremission()
         }

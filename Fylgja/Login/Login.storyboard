@@ -46,6 +46,9 @@
                                                 <integer key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ijq-Jh-nc1"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-qw-nuY">
                                         <rect key="frame" x="0.0" y="179.99999999999994" width="334.33333333333331" height="40"/>
@@ -85,6 +88,9 @@
                                 <state key="normal" title="訪客登入">
                                     <color key="titleColor" name="CommonColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="guestLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WJQ-uv-xdW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

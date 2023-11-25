@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+var isLogin = false
+
 protocol NibOwnerLoadable: AnyObject {
     static var nib: UINib { get }
 }
