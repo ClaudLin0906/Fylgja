@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneTextFieldView" customModule="Fylgja" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="199"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話號碼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOk-6c-UvS">
+                    <rect key="frame" x="10" y="64" width="118" height="130"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCs-SC-gwO" userLabel="line">
+                    <rect key="frame" x="138" y="64" width="1" height="130"/>
+                    <color key="backgroundColor" name="CommonColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="HrW-VE-t5k"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpH-Vd-AWz">
+                    <rect key="frame" x="149" y="64" width="234" height="130"/>
+                    <color key="textColor" name="CommonColor"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lpH-Vd-AWz" secondAttribute="bottom" constant="5" id="9ie-bO-zkd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lpH-Vd-AWz" secondAttribute="trailing" constant="10" id="LeI-e6-gik"/>
+                <constraint firstItem="lpH-Vd-AWz" firstAttribute="leading" secondItem="MCs-SC-gwO" secondAttribute="trailing" constant="10" id="Lj2-43-Yyx"/>
+                <constraint firstItem="MCs-SC-gwO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="OHv-fJ-C4x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TOk-6c-UvS" secondAttribute="bottom" constant="5" id="Ryx-aA-odS"/>
+                <constraint firstItem="TOk-6c-UvS" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.3" id="WEP-ls-iWD"/>
+                <constraint firstItem="TOk-6c-UvS" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Xga-MY-5HH"/>
+                <constraint firstItem="TOk-6c-UvS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="aVJ-79-dEq"/>
+                <constraint firstItem="lpH-Vd-AWz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="jvv-04-wH9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MCs-SC-gwO" secondAttribute="bottom" constant="5" id="lie-wK-ouy"/>
+                <constraint firstItem="TOk-6c-UvS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="pzY-Bu-dSh"/>
+                <constraint firstItem="MCs-SC-gwO" firstAttribute="leading" secondItem="TOk-6c-UvS" secondAttribute="trailing" constant="10" id="zLS-yU-UNF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-156.4885496183206" y="310.21126760563379"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="CommonColor">
+            <color red="0.070588235294117646" green="0.396078431372549" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

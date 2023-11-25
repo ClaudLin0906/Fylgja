@@ -26,10 +26,6 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         locationManager.requestAlwaysAuthorization()
     }
     
-    func updatingLocation(){
-        locationManager.startUpdatingLocation()
-    }
-    
     func isLocationServicesEnabled() -> Bool {
         let authorizationStatus: CLAuthorizationStatus
         if #available(iOS 14, *) {
@@ -38,12 +34,10 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
             authorizationStatus = CLLocationManager.authorizationStatus()
         }
         switch authorizationStatus {
-        case .notDetermined, .restricted, .denied:
+        case .notDetermined:
             return false
-        case .authorizedAlways, .authorizedWhenInUse:
+        default:
             return true
-        @unknown default:
-            return false
         }
     }
     
@@ -51,8 +45,20 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         location = locations.last
     }
     
-    func getLocation() -> CLLocation?{
+    func getLocation() -> CLLocation? {
         return location
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        let status = manager.authorizationStatus
+        switch status {
+        case .notDetermined:
+            break
+        case .denied:
+            break
+        default:
+            locationManager.startUpdatingLocation()
+        }
     }
 
 }

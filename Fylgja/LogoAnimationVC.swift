@@ -17,7 +17,9 @@ class LogoAnimationVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        showMainRootVC()
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+            self.showMainRootVC()
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {

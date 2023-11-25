@@ -20,13 +20,24 @@ class MainRootVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        if LocationManager.shared.isLocationServicesEnabled() {
-//            LocationManager.shared.updatingLocation()
-//        } else {
-//            if let VC = UIStoryboard(name: "AskLocationPremission", bundle: nil).instantiateViewController(withIdentifier: "AskLocationPremission") as? AskLocationPremissionVC {
-//                VC.modalPresentationStyle = .fullScreen
-//                present(VC, animated: false)
-//            }
-//        }
+        if LocationManager.shared.isLocationServicesEnabled() {
+            showLogin()
+        } else {
+            showAskLocationPremission()
+        }
+    }
+    
+    private func showLogin(){
+        if let VC = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "Login") as? LoginVC {
+            VC.modalPresentationStyle = .fullScreen
+            self.present(VC, animated: true)
+        }
+    }
+    
+    private func showAskLocationPremission(){
+        if let VC = UIStoryboard(name: "AskLocationPremission", bundle: nil).instantiateViewController(withIdentifier: "AskLocationPremission") as? AskLocationPremissionVC {
+            VC.modalPresentationStyle = .fullScreen
+            present(VC, animated: false)
+        }
     }
 }
