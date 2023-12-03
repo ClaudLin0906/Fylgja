@@ -50,30 +50,43 @@
                                             <action selector="tapLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ijq-Jh-nc1"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-qw-nuY">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-qw-nuY" userLabel="ButtonsStackView">
                                         <rect key="frame" x="0.0" y="179.99999999999994" width="334.33333333333331" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-7X-atC">
-                                                <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uW-7X-atC" userLabel="line">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="8om-v4-RCV"/>
+                                                    <constraint firstAttribute="width" secondItem="5uW-7X-atC" secondAttribute="height" multiplier="1:1" id="SdR-NH-aaY"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="logo.playstation" catalog="system"/>
+                                                <state key="normal" image="line"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pe-h1-COi">
-                                                <rect key="frame" x="83.666666666666657" y="0.0" width="83.666666666666657" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pe-h1-COi" userLabel="facebook">
+                                                <rect key="frame" x="98" y="0.0" width="40" height="40"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="logo.playstation" catalog="system"/>
+                                                <state key="normal" image="facebook"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQC-AC-14i">
-                                                <rect key="frame" x="167.33333333333331" y="0.0" width="83.333333333333314" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQC-AC-14i" userLabel="apple">
+                                                <rect key="frame" x="196.33333333333331" y="0.0" width="40" height="40"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="logo.playstation" catalog="system"/>
+                                                <state key="normal" image="apple"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxl-Uf-5w0">
-                                                <rect key="frame" x="250.66666666666666" y="0.0" width="83.666666666666657" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxl-Uf-5w0" userLabel="google">
+                                                <rect key="frame" x="294.33333333333337" y="0.0" width="40" height="40"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="logo.playstation" catalog="system"/>
+                                                <state key="normal" image="google"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="bxl-Uf-5w0" firstAttribute="width" secondItem="fQC-AC-14i" secondAttribute="width" id="1VD-GG-XGV"/>
+                                            <constraint firstItem="fQC-AC-14i" firstAttribute="width" secondItem="0pe-h1-COi" secondAttribute="width" id="Ird-JX-uqA"/>
+                                            <constraint firstItem="0pe-h1-COi" firstAttribute="width" secondItem="5uW-7X-atC" secondAttribute="width" id="Qij-Bx-Ey1"/>
+                                            <constraint firstItem="bxl-Uf-5w0" firstAttribute="height" secondItem="fQC-AC-14i" secondAttribute="height" id="bLz-an-rhC"/>
+                                            <constraint firstItem="0pe-h1-COi" firstAttribute="height" secondItem="5uW-7X-atC" secondAttribute="height" id="cs8-VG-JjR"/>
+                                            <constraint firstItem="fQC-AC-14i" firstAttribute="height" secondItem="0pe-h1-COi" secondAttribute="height" id="csP-kV-tXd"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -131,7 +144,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo.playstation" catalog="system" width="128" height="92"/>
+        <image name="apple" width="40" height="40"/>
+        <image name="facebook" width="40" height="40"/>
+        <image name="google" width="512" height="512"/>
+        <image name="line" width="512" height="512"/>
         <namedColor name="CommonColor">
             <color red="0.070588235294117646" green="0.396078431372549" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

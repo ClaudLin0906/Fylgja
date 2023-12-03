@@ -27,14 +27,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bNA-qx-Zvh">
-                    <rect key="frame" x="193" y="423.66666666666669" width="7" height="29.666666666666686"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <constraints>
+                <constraint firstItem="bNA-qx-Zvh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5VE-cp-tr3"/>
+                <constraint firstItem="bNA-qx-Zvh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GE3-aq-nRa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bNA-qx-Zvh" secondAttribute="bottom" id="MdK-di-BoB"/>
                 <constraint firstItem="bNA-qx-Zvh" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Ysd-bf-lFl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bNA-qx-Zvh" secondAttribute="trailing" id="cmw-NJ-hV1"/>
                 <constraint firstItem="bNA-qx-Zvh" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="iw2-bF-Axc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

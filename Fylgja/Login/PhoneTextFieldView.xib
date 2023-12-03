@@ -41,7 +41,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpH-Vd-AWz">
                     <rect key="frame" x="129" y="64" width="254" height="130"/>
                     <color key="textColor" name="CommonColor"/>
-                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="50"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>

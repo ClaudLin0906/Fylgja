@@ -74,7 +74,7 @@
         <scene sceneID="Pp6-vC-Tq7">
             <objects>
                 <viewControllerPlaceholder storyboardName="WaitingList" id="BaV-cU-Fox" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Aif-Kc-6Dk"/>
+                    <tabBarItem key="tabBarItem" title="候位" id="Aif-Kc-6Dk"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tth-Os-fvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

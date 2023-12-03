@@ -7,7 +7,9 @@
 
 import UIKit
 
-class WaitingListVC: UIViewController {
+class WaitingListVC: CustomRootVC {
+    
+    @IBOutlet weak var tableView:UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,4 +28,17 @@ class WaitingListVC: UIViewController {
     }
     */
 
+}
+
+extension WaitingListVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: WaitingTableViewCell.identifier) as! WaitingTableViewCell
+        return cell
+    }
+    
 }

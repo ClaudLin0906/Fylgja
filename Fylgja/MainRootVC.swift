@@ -23,10 +23,7 @@ class MainRootVC: UIViewController {
         if LocationManager.shared.isLocationServicesEnabled() {
             if !isLogin {
                 showLogin()
-            }else{
-                
             }
-            
         } else {
             showAskLocationPremission()
         }
@@ -35,7 +32,7 @@ class MainRootVC: UIViewController {
     private func showLogin(){
         if let VC = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "Login") as? LoginVC {
             VC.modalPresentationStyle = .fullScreen
-            self.present(VC, animated: true)
+            self.present(VC, animated: false)
         }
     }
     

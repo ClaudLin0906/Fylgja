@@ -14,7 +14,7 @@ protocol NibOwnerLoadable: AnyObject {
     static var nib: UINib { get }
 }
 
-func getTopController() -> UIViewController? {
+func getSuperController() -> UIViewController? {
     let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
 
     if var topController = keyWindow?.rootViewController {
@@ -44,3 +44,5 @@ func removeWhitespace(_ string: String) -> String {
     let filteredString = components.joined()
     return filteredString
 }
+
+

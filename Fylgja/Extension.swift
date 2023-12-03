@@ -91,6 +91,13 @@ extension UIViewController {
         return nil
     }
     
+    func removeAllChildViewControllers() {
+        guard self.children.count > 0 else { return }
+        let viewControllers = self.children
+        viewControllers.forEach({
+            $0.dismiss(animated: false)
+        })
+    }
 }
 
 extension Double {
@@ -226,6 +233,17 @@ extension UIView {
         var parentResponder: UIResponder? = self.next
         while parentResponder != nil {
             if let viewController = parentResponder as? UIViewController {
+                return viewController
+            }
+            parentResponder = parentResponder?.next
+        }
+        return nil
+    }
+    
+    func findParentViewController<T>(ofType type: T.Type) -> T? {
+        var parentResponder: UIResponder? = self.next
+        while parentResponder != nil {
+            if let viewController = parentResponder as? T {
                 return viewController
             }
             parentResponder = parentResponder?.next

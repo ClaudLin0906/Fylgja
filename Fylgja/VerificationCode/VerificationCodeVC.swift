@@ -58,7 +58,14 @@ extension VerificationCodeVC: UITextFieldDelegate{
                 //當tag到最後時響應者會是nil此時執行將鍵盤收起的function
                     self.view.endEditing(true)
                     let smsCodeStr = (firstTextFieldView.textField.text ?? "") + (secondTextFieldView.textField.text ?? "") + (thirdTextFieldView.textField.text ?? "") + (fourthTextFieldView.textField.text ?? "")
-                    print(smsCodeStr)
+                    
+                    if let mainRootVC = self.view.findParentViewController(ofType: MainRootVC.self) {
+                        mainRootVC.removeAllChildViewControllers()
+//                        if let VC = UIStoryboard(name: "Logo", bundle: nil).instantiateViewController(withIdentifier: "Logo") as? LogoVC {
+//                            VC.modalPresentationStyle = .fullScreen
+//                            mainRootVC.present(VC, animated: false)
+//                        }
+                    }
                 }
             }
             return false

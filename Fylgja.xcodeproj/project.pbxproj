@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F22B1B286F0041EB31 /* LogoVC.swift */; };
+		598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598A97F42B1B287B0041EB31 /* Logo.storyboard */; };
+		598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F62B1C66DA0041EB31 /* CustomVC.swift */; };
+		598A97F92B1C680C0041EB31 /* CustomRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F82B1C680B0041EB31 /* CustomRootVC.swift */; };
+		598A97FB2B1C689C0041EB31 /* WaitingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97FA2B1C689C0041EB31 /* WaitingTableViewCell.swift */; };
 		598C112B2B0A011F008B6005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112A2B0A011F008B6005 /* AppDelegate.swift */; };
 		598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112C2B0A011F008B6005 /* SceneDelegate.swift */; };
 		598C112F2B0A011F008B6005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112E2B0A011F008B6005 /* ViewController.swift */; };
@@ -34,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		598A97F22B1B286F0041EB31 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
+		598A97F42B1B287B0041EB31 /* Logo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logo.storyboard; sourceTree = "<group>"; };
+		598A97F62B1C66DA0041EB31 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
+		598A97F82B1C680B0041EB31 /* CustomRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRootVC.swift; sourceTree = "<group>"; };
+		598A97FA2B1C689C0041EB31 /* WaitingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingTableViewCell.swift; sourceTree = "<group>"; };
 		598C11272B0A011F008B6005 /* Fylgja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fylgja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		598C112A2B0A011F008B6005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		598C112C2B0A011F008B6005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		598A97F12B1B285B0041EB31 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				598A97F22B1B286F0041EB31 /* LogoVC.swift */,
+				598A97F42B1B287B0041EB31 /* Logo.storyboard */,
+			);
+			path = Logo;
+			sourceTree = "<group>";
+		};
 		598C111E2B0A011F008B6005 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +121,9 @@
 				598C114A2B0A0D9E008B6005 /* Common.swift */,
 				598C114E2B0A0E3F008B6005 /* LocationManager.swift */,
 				598C118A2B11FC29008B6005 /* MainTabBarController.swift */,
+				598A97F82B1C680B0041EB31 /* CustomRootVC.swift */,
+				598A97F62B1C66DA0041EB31 /* CustomVC.swift */,
+				598A97F12B1B285B0041EB31 /* Logo */,
 				598C11832B11FB1A008B6005 /* WaitingList */,
 				598C117E2B11F9A2008B6005 /* VerificationCode */,
 				598C11702B11D30E008B6005 /* Login */,
@@ -157,6 +179,7 @@
 			children = (
 				598C11842B11FB35008B6005 /* WaitingListVC.swift */,
 				598C11862B11FB3C008B6005 /* WaitingList.storyboard */,
+				598A97FA2B1C689C0041EB31 /* WaitingTableViewCell.swift */,
 			);
 			path = WaitingList;
 			sourceTree = "<group>";
@@ -222,6 +245,7 @@
 				598C11822B11F9BD008B6005 /* VerificationCode.storyboard in Resources */,
 				598C11492B0A0C71008B6005 /* AskLocationPremission.storyboard in Resources */,
 				598C11782B11DF7B008B6005 /* PhoneTextFieldView.xib in Resources */,
+				598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */,
 				598C11372B0A0120008B6005 /* LaunchScreen.storyboard in Resources */,
 				598C11872B11FB3C008B6005 /* WaitingList.storyboard in Resources */,
 				598C11342B0A0120008B6005 /* Assets.xcassets in Resources */,
@@ -239,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				598C114B2B0A0D9E008B6005 /* Common.swift in Sources */,
+				598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */,
+				598A97FB2B1C689C0041EB31 /* WaitingTableViewCell.swift in Sources */,
 				598C11802B11F9B1008B6005 /* VerificationCodeVC.swift in Sources */,
 				598C11412B0A021B008B6005 /* MainRootVC.swift in Sources */,
 				598C112F2B0A011F008B6005 /* ViewController.swift in Sources */,
@@ -251,8 +277,10 @@
 				598C11852B11FB35008B6005 /* WaitingListVC.swift in Sources */,
 				598C118B2B11FC29008B6005 /* MainTabBarController.swift in Sources */,
 				598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */,
+				598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */,
 				598C11762B11DEF4008B6005 /* PhoneTextFieldView.swift in Sources */,
 				598C114F2B0A0E3F008B6005 /* LocationManager.swift in Sources */,
+				598A97F92B1C680C0041EB31 /* CustomRootVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
