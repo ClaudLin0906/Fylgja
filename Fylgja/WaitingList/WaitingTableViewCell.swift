@@ -10,9 +10,13 @@ import UIKit
 class WaitingTableViewCell: UITableViewCell {
     
     static let identifier = "WaitingTableViewCell"
+    
+    @IBOutlet weak var background:UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        background.layer.borderColor = UIColor(named: "CommonColor")?.cgColor
+        background.layer.borderWidth = 1
         // Initialization code
     }
 
