@@ -18,7 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Hn-iw-EI8">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1E-mI-BXj">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noData" translatesAutoresizingMaskIntoConstraints="NO" id="3bb-NA-a17">
+                                        <rect key="frame" x="121.66666666666669" y="207.66666666666669" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Ux3-DD-MBT"/>
+                                            <constraint firstAttribute="width" constant="150" id="pRh-d4-ltk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暫時沒有候位中的餐廳" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocx-Uv-qb4">
+                                        <rect key="frame" x="96.666666666666686" y="407.66666666666669" width="200" height="28"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="20"/>
+                                        <color key="textColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ocx-Uv-qb4" firstAttribute="top" secondItem="3bb-NA-a17" secondAttribute="bottom" constant="50" id="3oY-Y0-bj6"/>
+                                    <constraint firstItem="3bb-NA-a17" firstAttribute="bottom" secondItem="t1E-mI-BXj" secondAttribute="centerY" id="djx-Bt-bQT"/>
+                                    <constraint firstItem="ocx-Uv-qb4" firstAttribute="centerX" secondItem="t1E-mI-BXj" secondAttribute="centerX" id="ha2-Fs-DWh"/>
+                                    <constraint firstItem="3bb-NA-a17" firstAttribute="centerX" secondItem="t1E-mI-BXj" secondAttribute="centerX" id="kcK-1D-vZ8"/>
+                                </constraints>
+                            </view>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Hn-iw-EI8">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -167,14 +191,19 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="t1E-mI-BXj" secondAttribute="bottom" id="2Sb-pg-cAW"/>
+                            <constraint firstItem="t1E-mI-BXj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="5ct-MY-aIo"/>
+                            <constraint firstItem="t1E-mI-BXj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="P2f-zh-gU9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4Hn-iw-EI8" secondAttribute="trailing" id="buj-fS-Ysx"/>
                             <constraint firstItem="4Hn-iw-EI8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eBZ-up-Okv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="t1E-mI-BXj" secondAttribute="trailing" id="juS-V1-De6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="4Hn-iw-EI8" secondAttribute="bottom" id="lWr-hY-BMp"/>
                             <constraint firstItem="4Hn-iw-EI8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="lkI-8b-f3b"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xYd-Ep-LGr"/>
                     <connections>
+                        <outlet property="noDataView" destination="t1E-mI-BXj" id="D5n-Ev-aJU"/>
                         <outlet property="tableView" destination="4Hn-iw-EI8" id="Aqm-el-2gt"/>
                     </connections>
                 </viewController>
@@ -202,6 +231,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="noData" width="128" height="128"/>
         <image name="storeExample1" width="112" height="107"/>
         <namedColor name="CommonColor">
             <color red="0.070588235294117646" green="0.396078431372549" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

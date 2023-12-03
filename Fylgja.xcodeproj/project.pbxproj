@@ -12,6 +12,8 @@
 		598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F62B1C66DA0041EB31 /* CustomVC.swift */; };
 		598A97F92B1C680C0041EB31 /* CustomRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F82B1C680B0041EB31 /* CustomRootVC.swift */; };
 		598A97FB2B1C689C0041EB31 /* WaitingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97FA2B1C689C0041EB31 /* WaitingTableViewCell.swift */; };
+		598A98032B1C885E0041EB31 /* ScanBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A98022B1C885E0041EB31 /* ScanBtn.swift */; };
+		598A98052B1C88770041EB31 /* ScanBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598A98042B1C88770041EB31 /* ScanBtn.xib */; };
 		598C112B2B0A011F008B6005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112A2B0A011F008B6005 /* AppDelegate.swift */; };
 		598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112C2B0A011F008B6005 /* SceneDelegate.swift */; };
 		598C112F2B0A011F008B6005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112E2B0A011F008B6005 /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		598A97F62B1C66DA0041EB31 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
 		598A97F82B1C680B0041EB31 /* CustomRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRootVC.swift; sourceTree = "<group>"; };
 		598A97FA2B1C689C0041EB31 /* WaitingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingTableViewCell.swift; sourceTree = "<group>"; };
+		598A98022B1C885E0041EB31 /* ScanBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBtn.swift; sourceTree = "<group>"; };
+		598A98042B1C88770041EB31 /* ScanBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanBtn.xib; sourceTree = "<group>"; };
 		598C11272B0A011F008B6005 /* Fylgja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fylgja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		598C112A2B0A011F008B6005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		598C112C2B0A011F008B6005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 		598C11442B0A0BC7008B6005 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				598A98022B1C885E0041EB31 /* ScanBtn.swift */,
+				598A98042B1C88770041EB31 /* ScanBtn.xib */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				598C11372B0A0120008B6005 /* LaunchScreen.storyboard in Resources */,
 				598C11872B11FB3C008B6005 /* WaitingList.storyboard in Resources */,
 				598C11342B0A0120008B6005 /* Assets.xcassets in Resources */,
+				598A98052B1C88770041EB31 /* ScanBtn.xib in Resources */,
 				598C11742B11D334008B6005 /* Login.storyboard in Resources */,
 				598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */,
 				598C11322B0A011F008B6005 /* Main.storyboard in Resources */,
@@ -263,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				598C114B2B0A0D9E008B6005 /* Common.swift in Sources */,
+				598A98032B1C885E0041EB31 /* ScanBtn.swift in Sources */,
 				598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */,
 				598A97FB2B1C689C0041EB31 /* WaitingTableViewCell.swift in Sources */,
 				598C11802B11F9B1008B6005 /* VerificationCodeVC.swift in Sources */,

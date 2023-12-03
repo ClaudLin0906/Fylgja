@@ -10,6 +10,8 @@ import UIKit
 
 var isLogin = false
 
+let keyWindow = UIApplication.shared.windows.filter({ $0.isKeyWindow }).last
+
 protocol NibOwnerLoadable: AnyObject {
     static var nib: UINib { get }
 }
