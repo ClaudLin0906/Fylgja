@@ -9,20 +9,24 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
 
+    private let noSelectColor = #colorLiteral(red: 0.7333333333, green: 0.7333333333, blue: 0.7333333333, alpha: 1)
     
-    let tabbarTitle:[String] =
+    private let tabbarTitle:[String] =
     [
-        "候位"
+        "候位",
+        "選擇"
     ]
     
-    let noSelectImages:[UIImage?] =
+    private let noSelectImages:[UIImage?] =
     [
-        UIImage(systemName: "house.fill")
+        UIImage(systemName: "house.fill"),
+        UIImage(systemName: "opticaldisc.fill")
     ]
     
-    let selectImages:[UIImage?] =
+    private let selectImages:[UIImage?] =
     [
-        UIImage(systemName: "house.fill")
+        UIImage(systemName: "house.fill"),
+        UIImage(systemName: "opticaldisc.fill")
     ]
 
     override func viewDidLoad() {
@@ -33,7 +37,7 @@ class MainTabBarController: UITabBarController {
 
     private func updateTabBarAppearance(){
         let tabBarItemAppearance = UITabBarItemAppearance()
-        tabBarItemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "CommonColor") ?? .black]
+        tabBarItemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: noSelectColor ]
         tabBarItemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "CommonColor") ?? .black]
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
@@ -53,7 +57,7 @@ class MainTabBarController: UITabBarController {
             let SelectImage = selectImages[index]!.resize(targetSize: SelectImageSize).withRenderingMode(.alwaysOriginal)
             if let nc = viewControllers![index] as? UINavigationController {
                 nc.tabBarItem.title = value
-                nc.tabBarItem.image = noSelectImage.withTintColor(UIColor(named: "CommonColor") ?? .black, renderingMode: .alwaysOriginal)
+                nc.tabBarItem.image = noSelectImage.withTintColor(noSelectColor , renderingMode: .alwaysOriginal)
                 nc.tabBarItem.selectedImage = SelectImage.withTintColor(UIColor(named: "CommonColor") ?? .black, renderingMode: .alwaysOriginal)
                 nc.tabBarController?.tabBar.backgroundColor = .brown
             }

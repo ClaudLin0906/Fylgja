@@ -16,6 +16,11 @@ protocol NibOwnerLoadable: AnyObject {
     static var nib: UINib { get }
 }
 
+enum WaitStatus {
+    case open
+    case close
+}
+
 func getSuperController() -> UIViewController? {
     let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
 

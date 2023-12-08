@@ -38,8 +38,8 @@ class WaitingListVC: CustomRootVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableData.append(contentsOf: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-//        tableData.removeAll()
+//        tableData.append(contentsOf: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+        tableData.removeAll()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -78,6 +78,14 @@ extension WaitingListVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: WaitingTableViewCell.identifier) as! WaitingTableViewCell
         return cell
+    }
+    
+}
+
+extension WaitingListVC: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     
 }

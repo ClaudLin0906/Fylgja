@@ -14,6 +14,13 @@
 		598A97FB2B1C689C0041EB31 /* WaitingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97FA2B1C689C0041EB31 /* WaitingTableViewCell.swift */; };
 		598A98032B1C885E0041EB31 /* ScanBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A98022B1C885E0041EB31 /* ScanBtn.swift */; };
 		598A98052B1C88770041EB31 /* ScanBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598A98042B1C88770041EB31 /* ScanBtn.xib */; };
+		598A98092B22FB410041EB31 /* StoreListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A98082B22FB410041EB31 /* StoreListVC.swift */; };
+		598A980B2B22FBE20041EB31 /* StoreList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598A980A2B22FBE20041EB31 /* StoreList.storyboard */; };
+		598A980D2B22FE560041EB31 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A980C2B22FE560041EB31 /* SearchView.swift */; };
+		598A980F2B22FE890041EB31 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598A980E2B22FE890041EB31 /* SearchView.xib */; };
+		598A98112B23134C0041EB31 /* StoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A98102B23134C0041EB31 /* StoreListTableViewCell.swift */; };
+		598A98132B231AA20041EB31 /* WaitStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A98122B231AA20041EB31 /* WaitStatusView.swift */; };
+		598A98152B231AAE0041EB31 /* WaitStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598A98142B231AAE0041EB31 /* WaitStatusView.xib */; };
 		598C112B2B0A011F008B6005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112A2B0A011F008B6005 /* AppDelegate.swift */; };
 		598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112C2B0A011F008B6005 /* SceneDelegate.swift */; };
 		598C112F2B0A011F008B6005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112E2B0A011F008B6005 /* ViewController.swift */; };
@@ -48,6 +55,13 @@
 		598A97FA2B1C689C0041EB31 /* WaitingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingTableViewCell.swift; sourceTree = "<group>"; };
 		598A98022B1C885E0041EB31 /* ScanBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBtn.swift; sourceTree = "<group>"; };
 		598A98042B1C88770041EB31 /* ScanBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanBtn.xib; sourceTree = "<group>"; };
+		598A98082B22FB410041EB31 /* StoreListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListVC.swift; sourceTree = "<group>"; };
+		598A980A2B22FBE20041EB31 /* StoreList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreList.storyboard; sourceTree = "<group>"; };
+		598A980C2B22FE560041EB31 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		598A980E2B22FE890041EB31 /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		598A98102B23134C0041EB31 /* StoreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListTableViewCell.swift; sourceTree = "<group>"; };
+		598A98122B231AA20041EB31 /* WaitStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitStatusView.swift; sourceTree = "<group>"; };
+		598A98142B231AAE0041EB31 /* WaitStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaitStatusView.xib; sourceTree = "<group>"; };
 		598C11272B0A011F008B6005 /* Fylgja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fylgja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		598C112A2B0A011F008B6005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		598C112C2B0A011F008B6005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +110,25 @@
 			path = Logo;
 			sourceTree = "<group>";
 		};
+		598A98062B1C92A00041EB31 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		598A98072B22FB240041EB31 /* StoreList */ = {
+			isa = PBXGroup;
+			children = (
+				598A98082B22FB410041EB31 /* StoreListVC.swift */,
+				598A980A2B22FBE20041EB31 /* StoreList.storyboard */,
+				598A98102B23134C0041EB31 /* StoreListTableViewCell.swift */,
+				598A980C2B22FE560041EB31 /* SearchView.swift */,
+				598A980E2B22FE890041EB31 /* SearchView.xib */,
+			);
+			path = StoreList;
+			sourceTree = "<group>";
+		};
 		598C111E2B0A011F008B6005 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +160,8 @@
 				598C118A2B11FC29008B6005 /* MainTabBarController.swift */,
 				598A97F82B1C680B0041EB31 /* CustomRootVC.swift */,
 				598A97F62B1C66DA0041EB31 /* CustomVC.swift */,
+				598A98072B22FB240041EB31 /* StoreList */,
+				598A98062B1C92A00041EB31 /* Scan */,
 				598A97F12B1B285B0041EB31 /* Logo */,
 				598C11832B11FB1A008B6005 /* WaitingList */,
 				598C117E2B11F9A2008B6005 /* VerificationCode */,
@@ -145,6 +180,8 @@
 			children = (
 				598A98022B1C885E0041EB31 /* ScanBtn.swift */,
 				598A98042B1C88770041EB31 /* ScanBtn.xib */,
+				598A98122B231AA20041EB31 /* WaitStatusView.swift */,
+				598A98142B231AAE0041EB31 /* WaitStatusView.xib */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -252,11 +289,14 @@
 				598C11492B0A0C71008B6005 /* AskLocationPremission.storyboard in Resources */,
 				598C11782B11DF7B008B6005 /* PhoneTextFieldView.xib in Resources */,
 				598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */,
+				598A980B2B22FBE20041EB31 /* StoreList.storyboard in Resources */,
+				598A980F2B22FE890041EB31 /* SearchView.xib in Resources */,
 				598C11372B0A0120008B6005 /* LaunchScreen.storyboard in Resources */,
 				598C11872B11FB3C008B6005 /* WaitingList.storyboard in Resources */,
 				598C11342B0A0120008B6005 /* Assets.xcassets in Resources */,
 				598A98052B1C88770041EB31 /* ScanBtn.xib in Resources */,
 				598C11742B11D334008B6005 /* Login.storyboard in Resources */,
+				598A98152B231AAE0041EB31 /* WaitStatusView.xib in Resources */,
 				598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */,
 				598C11322B0A011F008B6005 /* Main.storyboard in Resources */,
 			);
@@ -278,6 +318,8 @@
 				598C112F2B0A011F008B6005 /* ViewController.swift in Sources */,
 				598C11472B0A0C61008B6005 /* AskLocationPremissionVC.swift in Sources */,
 				598C11722B11D326008B6005 /* LoginVC.swift in Sources */,
+				598A98092B22FB410041EB31 /* StoreListVC.swift in Sources */,
+				598A980D2B22FE560041EB31 /* SearchView.swift in Sources */,
 				598C112B2B0A011F008B6005 /* AppDelegate.swift in Sources */,
 				598C118D2B120183008B6005 /* VerificationCodeTextFieldView.swift in Sources */,
 				598C11432B0A0BBB008B6005 /* Extension.swift in Sources */,
@@ -286,6 +328,8 @@
 				598C118B2B11FC29008B6005 /* MainTabBarController.swift in Sources */,
 				598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */,
 				598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */,
+				598A98132B231AA20041EB31 /* WaitStatusView.swift in Sources */,
+				598A98112B23134C0041EB31 /* StoreListTableViewCell.swift in Sources */,
 				598C11762B11DEF4008B6005 /* PhoneTextFieldView.swift in Sources */,
 				598C114F2B0A0E3F008B6005 /* LocationManager.swift in Sources */,
 				598A97F92B1C680C0041EB31 /* CustomRootVC.swift in Sources */,
