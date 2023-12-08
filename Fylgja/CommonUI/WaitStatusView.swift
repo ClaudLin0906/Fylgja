@@ -10,6 +10,10 @@ import UIKit
 class WaitStatusView: UIView, NibOwnerLoadable {
     
     private var status:WaitStatus = .open
+    
+    @IBOutlet weak var statusColor:UIView!
+    
+    @IBOutlet weak var statusLabel:UILabel!
         
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,4 +28,10 @@ class WaitStatusView: UIView, NibOwnerLoadable {
     private func customInit(){
         loadNibContent()
     }
+    
+    func setStatus(_ status:WaitStatus) {
+        statusColor.backgroundColor = status.color
+        statusLabel.text = status.description
+    }
+    
 }
