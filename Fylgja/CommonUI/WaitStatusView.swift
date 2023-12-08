@@ -9,7 +9,7 @@ import UIKit
 
 class WaitStatusView: UIView, NibOwnerLoadable {
     
-    private var status:
+    private var status:WaitStatus = .open
         
     override init(frame: CGRect) {
         super.init(frame: frame)

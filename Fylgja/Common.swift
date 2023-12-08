@@ -19,6 +19,24 @@ protocol NibOwnerLoadable: AnyObject {
 enum WaitStatus {
     case open
     case close
+    
+    var color:UIColor {
+        switch self {
+        case .open:
+            return #colorLiteral(red: 0.6352941176, green: 0.937254902, blue: 0.3019607843, alpha: 1)
+        case .close:
+            return #colorLiteral(red: 0.8078431373, green: 0.8078431373, blue: 0.8078431373, alpha: 1)
+        }
+    }
+    
+    var description: String {
+        switch self {
+        case .open:
+            return "開放候位中"
+        case .close:
+            return "暫停候位中"
+        }
+    }
 }
 
 func getSuperController() -> UIViewController? {
