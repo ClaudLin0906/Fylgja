@@ -15,6 +15,8 @@ class StoreListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var waitStatusView:WaitStatusView!
 
+    @IBOutlet weak var stackView:UIStackView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         distanceBackground.layer.borderColor = commonColor.cgColor
@@ -28,8 +30,9 @@ class StoreListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCell(_ status:WaitStatus){
+    func setCell(_ status:WaitStatus,_ tags:[String]){
         waitStatusView.setStatus(status)
+        
     }
 
 }

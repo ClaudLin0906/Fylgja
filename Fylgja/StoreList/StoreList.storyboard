@@ -92,13 +92,8 @@
                                                                 <constraint firstAttribute="height" constant="20" id="kAx-up-Gid"/>
                                                             </constraints>
                                                         </view>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w56-W8-LCV">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w56-W8-LCV">
                                                             <rect key="frame" x="188" y="159.66666666666666" width="150" height="20"/>
-                                                            <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wui-gE-587" customClass="TagView" customModule="Fylgja" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
-                                                                </view>
-                                                            </subviews>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="150" id="4LG-IW-Y1W"/>
                                                             </constraints>
@@ -135,6 +130,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="distanceBackground" destination="2Ow-7h-TXk" id="mwb-31-w2T"/>
+                                            <outlet property="stackView" destination="w56-W8-LCV" id="RYU-eK-fFo"/>
                                             <outlet property="waitStatusView" destination="SAF-VI-bXm" id="AYg-Tg-09c"/>
                                         </connections>
                                     </tableViewCell>

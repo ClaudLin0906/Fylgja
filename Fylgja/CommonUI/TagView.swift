@@ -8,6 +8,8 @@
 import UIKit
 
 class TagView: UIView, NibOwnerLoadable {
+    
+    @IBOutlet weak var label:UILabel!
         
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,8 +25,9 @@ class TagView: UIView, NibOwnerLoadable {
         loadNibContent()
     }
     
-    func setTag(){
-        
+    func setTag(_ tagTitle:String, _ status:TagStatus) {
+        backgroundColor = status.backgroundColor
+        label.text = tagTitle
     }
 
 }
