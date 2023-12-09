@@ -15,6 +15,9 @@
                     <integer key="value" value="2"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="label" destination="F1z-h1-x70" id="Pof-QO-NTN"/>
+            </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
@@ -22,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1z-h1-x70">
-                    <rect key="frame" x="181.33333333333334" y="430" width="30.333333333333343" height="17"/>
+                    <rect key="frame" x="0.0" y="430" width="393" height="17"/>
                     <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -31,6 +34,8 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" name="CommonColor"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="F1z-h1-x70" secondAttribute="trailing" id="DfL-Gl-mpZ"/>
+                <constraint firstItem="F1z-h1-x70" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qaf-ZC-6PG"/>
                 <constraint firstItem="F1z-h1-x70" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="pfm-KO-LFE"/>
                 <constraint firstItem="F1z-h1-x70" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="r9F-mj-Ebe"/>
             </constraints>

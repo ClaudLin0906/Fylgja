@@ -32,7 +32,11 @@ class StoreListTableViewCell: UITableViewCell {
     
     func setCell(_ status:WaitStatus,_ tags:[String]){
         waitStatusView.setStatus(status)
-        
+        for title in tags {
+            let tagView = TagView()
+            tagView.setTag(title, .seclected)
+            stackView.addArrangedSubview(tagView)
+        }
     }
 
 }

@@ -45,10 +45,10 @@ extension StoreListVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: StoreListTableViewCell.identifier, for: indexPath) as! StoreListTableViewCell
         if indexPath.row % 2 == 1 {
-            cell.setCell(.open)
+            cell.setCell(.open, ["義大利麵", "輕食", "排餐"])
         }
         if indexPath.row % 2 == 0 {
-            cell.setCell(.close)
+            cell.setCell(.close, ["炸物", "茶飲", "排餐"])
         }
         return cell
     }
