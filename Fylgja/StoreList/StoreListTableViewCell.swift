@@ -12,6 +12,8 @@ class StoreListTableViewCell: UITableViewCell {
     static let identifier = "StoreListTableViewCell"
     
     @IBOutlet weak var distanceBackground:UIView!
+    
+    @IBOutlet weak var waitStatusView:WaitStatusView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +26,10 @@ class StoreListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setCell(_ status:WaitStatus){
+        waitStatusView.setStatus(status)
     }
 
 }

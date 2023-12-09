@@ -31,3 +31,26 @@ class StoreListVC: CustomRootVC {
     */
 
 }
+
+extension StoreListVC: UITableViewDelegate {
+    
+}
+
+extension StoreListVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: StoreListTableViewCell.identifier, for: indexPath) as! StoreListTableViewCell
+        if indexPath.row % 2 == 1 {
+            cell.setCell(.open)
+        }
+        if indexPath.row % 2 == 0 {
+            cell.setCell(.close)
+        }
+        return cell
+    }
+    
+}
