@@ -11,16 +11,19 @@ class StoreListTableViewCell: UITableViewCell {
     
     static let identifier = "StoreListTableViewCell"
     
-    @IBOutlet weak var distanceBackground:UIView!
-    
+    @IBOutlet weak var distanceBackground:UIView!{
+        didSet{
+            distanceBackground.layer.borderColor = commonColor.cgColor
+            distanceBackground.layer.borderWidth = 1
+        }
+    }
     @IBOutlet weak var waitStatusView:WaitStatusView!
 
     @IBOutlet weak var stackView:UIStackView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        distanceBackground.layer.borderColor = commonColor.cgColor
-        distanceBackground.layer.borderWidth = 1
+
         // Initialization code
     }
 
