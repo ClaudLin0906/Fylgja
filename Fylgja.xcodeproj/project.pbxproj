@@ -21,6 +21,8 @@
 		598A98112B23134C0041EB31 /* StoreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A98102B23134C0041EB31 /* StoreListTableViewCell.swift */; };
 		598A98132B231AA20041EB31 /* WaitStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A98122B231AA20041EB31 /* WaitStatusView.swift */; };
 		598A98152B231AAE0041EB31 /* WaitStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598A98142B231AAE0041EB31 /* WaitStatusView.xib */; };
+		598A98172B23EFA70041EB31 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A98162B23EFA70041EB31 /* TagView.swift */; };
+		598A98192B23EFE40041EB31 /* TagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598A98182B23EFE40041EB31 /* TagView.xib */; };
 		598C112B2B0A011F008B6005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112A2B0A011F008B6005 /* AppDelegate.swift */; };
 		598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112C2B0A011F008B6005 /* SceneDelegate.swift */; };
 		598C112F2B0A011F008B6005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C112E2B0A011F008B6005 /* ViewController.swift */; };
@@ -62,6 +64,8 @@
 		598A98102B23134C0041EB31 /* StoreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListTableViewCell.swift; sourceTree = "<group>"; };
 		598A98122B231AA20041EB31 /* WaitStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitStatusView.swift; sourceTree = "<group>"; };
 		598A98142B231AAE0041EB31 /* WaitStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaitStatusView.xib; sourceTree = "<group>"; };
+		598A98162B23EFA70041EB31 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		598A98182B23EFE40041EB31 /* TagView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagView.xib; sourceTree = "<group>"; };
 		598C11272B0A011F008B6005 /* Fylgja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fylgja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		598C112A2B0A011F008B6005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		598C112C2B0A011F008B6005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				598A98042B1C88770041EB31 /* ScanBtn.xib */,
 				598A98122B231AA20041EB31 /* WaitStatusView.swift */,
 				598A98142B231AAE0041EB31 /* WaitStatusView.xib */,
+				598A98162B23EFA70041EB31 /* TagView.swift */,
+				598A98182B23EFE40041EB31 /* TagView.xib */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				598C11822B11F9BD008B6005 /* VerificationCode.storyboard in Resources */,
+				598A98192B23EFE40041EB31 /* TagView.xib in Resources */,
 				598C11492B0A0C71008B6005 /* AskLocationPremission.storyboard in Resources */,
 				598C11782B11DF7B008B6005 /* PhoneTextFieldView.xib in Resources */,
 				598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */,
@@ -315,6 +322,7 @@
 				598A97FB2B1C689C0041EB31 /* WaitingTableViewCell.swift in Sources */,
 				598C11802B11F9B1008B6005 /* VerificationCodeVC.swift in Sources */,
 				598C11412B0A021B008B6005 /* MainRootVC.swift in Sources */,
+				598A98172B23EFA70041EB31 /* TagView.swift in Sources */,
 				598C112F2B0A011F008B6005 /* ViewController.swift in Sources */,
 				598C11472B0A0C61008B6005 /* AskLocationPremissionVC.swift in Sources */,
 				598C11722B11D326008B6005 /* LoginVC.swift in Sources */,

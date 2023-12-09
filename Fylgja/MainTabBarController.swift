@@ -38,7 +38,7 @@ class MainTabBarController: UITabBarController {
     private func updateTabBarAppearance(){
         let tabBarItemAppearance = UITabBarItemAppearance()
         tabBarItemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: noSelectColor ]
-        tabBarItemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "CommonColor") ?? .black]
+        tabBarItemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: commonColor]
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
         tabBarAppearance.configureWithOpaqueBackground()
@@ -58,7 +58,7 @@ class MainTabBarController: UITabBarController {
             if let nc = viewControllers![index] as? UINavigationController {
                 nc.tabBarItem.title = value
                 nc.tabBarItem.image = noSelectImage.withTintColor(noSelectColor , renderingMode: .alwaysOriginal)
-                nc.tabBarItem.selectedImage = SelectImage.withTintColor(UIColor(named: "CommonColor") ?? .black, renderingMode: .alwaysOriginal)
+                nc.tabBarItem.selectedImage = SelectImage.withTintColor(commonColor, renderingMode: .alwaysOriginal)
                 nc.tabBarController?.tabBar.backgroundColor = .brown
             }
         }

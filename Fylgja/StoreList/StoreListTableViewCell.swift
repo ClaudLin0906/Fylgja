@@ -17,7 +17,7 @@ class StoreListTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        distanceBackground.layer.borderColor = UIColor(named: "CommonColor")?.cgColor
+        distanceBackground.layer.borderColor = commonColor.cgColor
         distanceBackground.layer.borderWidth = 1
         // Initialization code
     }

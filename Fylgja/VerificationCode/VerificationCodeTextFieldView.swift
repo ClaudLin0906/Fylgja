@@ -23,9 +23,8 @@ class VerificationCodeTextFieldView: UIView, NibOwnerLoadable {
     
     private func customInit(){
         loadNibContent()
-        if let color = UIColor(named: "CommonColor"){
-            layer.borderColor = color.cgColor
-        }
+        layer.borderColor = commonColor.cgColor
+        
     }
 
 }

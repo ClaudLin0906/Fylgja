@@ -92,6 +92,17 @@
                                                                 <constraint firstAttribute="height" constant="20" id="kAx-up-Gid"/>
                                                             </constraints>
                                                         </view>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w56-W8-LCV">
+                                                            <rect key="frame" x="188" y="159.66666666666666" width="150" height="20"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wui-gE-587" customClass="TagView" customModule="Fylgja" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="150" id="4LG-IW-Y1W"/>
+                                                            </constraints>
+                                                        </stackView>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="gAF-0H-pmk" firstAttribute="leading" secondItem="ZH7-aF-Bu9" secondAttribute="leading" id="0ft-nm-RVm"/>
@@ -102,6 +113,9 @@
                                                         <constraint firstItem="MX9-9U-9uH" firstAttribute="centerY" secondItem="oRo-Rb-bgl" secondAttribute="centerY" id="Bj9-h0-Peq"/>
                                                         <constraint firstItem="SAF-VI-bXm" firstAttribute="trailing" secondItem="oRo-Rb-bgl" secondAttribute="trailing" id="Eex-vF-oNK"/>
                                                         <constraint firstItem="gAF-0H-pmk" firstAttribute="top" secondItem="ZH7-aF-Bu9" secondAttribute="top" id="Fto-8w-1EQ"/>
+                                                        <constraint firstItem="w56-W8-LCV" firstAttribute="centerY" secondItem="SAF-VI-bXm" secondAttribute="centerY" id="U2Y-E8-Snl"/>
+                                                        <constraint firstItem="w56-W8-LCV" firstAttribute="trailing" secondItem="2Ow-7h-TXk" secondAttribute="trailing" id="WGX-gg-chU"/>
+                                                        <constraint firstItem="w56-W8-LCV" firstAttribute="height" secondItem="SAF-VI-bXm" secondAttribute="height" id="b4m-3z-4hU"/>
                                                         <constraint firstItem="SAF-VI-bXm" firstAttribute="leading" secondItem="oRo-Rb-bgl" secondAttribute="leading" id="iSK-Aa-WND"/>
                                                         <constraint firstItem="SAF-VI-bXm" firstAttribute="top" secondItem="oRo-Rb-bgl" secondAttribute="bottom" constant="15" id="pQr-7Y-qCN"/>
                                                         <constraint firstItem="9pb-DV-ZQC" firstAttribute="centerY" secondItem="MX9-9U-9uH" secondAttribute="centerY" id="piq-7P-5VU"/>

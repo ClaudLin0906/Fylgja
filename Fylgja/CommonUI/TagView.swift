@@ -1,14 +1,14 @@
 //
-//  PhoneTextFieldView.swift
+//  TagView.swift
 //  Fylgja
 //
-//  Created by 林書郁 on 2023/11/25.
+//  Created by 林書郁 on 2023/12/9.
 //
 
 import UIKit
 
-class PhoneTextFieldView: UIView, NibOwnerLoadable {
-
+class TagView: UIView, NibOwnerLoadable {
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         customInit()
@@ -21,7 +21,10 @@ class PhoneTextFieldView: UIView, NibOwnerLoadable {
     
     private func customInit(){
         loadNibContent()
-        layer.borderColor = commonColor.cgColor
+    }
+    
+    func setTag(){
+        
     }
 
 }

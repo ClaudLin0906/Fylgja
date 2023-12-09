@@ -15,7 +15,7 @@ class WaitingTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        background.layer.borderColor = UIColor(named: "CommonColor")?.cgColor
+        background.layer.borderColor = commonColor.cgColor
         background.layer.borderWidth = 1
         // Initialization code
     }

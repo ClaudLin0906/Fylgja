@@ -39,6 +39,22 @@ enum WaitStatus {
     }
 }
 
+enum TagStatus {
+    case noSelected
+    case seclected
+    
+    var backgroundColor:UIColor {
+        switch self {
+        case .noSelected:
+            return #colorLiteral(red: 0.7333333333, green: 0.7333333333, blue: 0.7333333333, alpha: 1)
+        case .seclected:
+            return commonColor
+        }
+    }
+}
+
+let commonColor = #colorLiteral(red: 0.07058823529, green: 0.3960784314, blue: 0.6431372549, alpha: 1)
+
 func getSuperController() -> UIViewController? {
     let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
 
