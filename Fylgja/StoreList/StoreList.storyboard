@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="203" width="393" height="615"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoreListTableViewCell" id="Cbl-5r-C3x" customClass="StoreListTableViewCell" customModule="Fylgja" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoreListTableViewCell" id="Cbl-5r-C3x" customClass="StoreListTableViewCell" customModule="Fylgja" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="230"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cbl-5r-C3x" id="pTs-MQ-rE0">
