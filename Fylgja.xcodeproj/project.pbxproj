@@ -52,9 +52,12 @@
 		59E8A62F2B25ADCB005E58A2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E8A62E2B25ADCB005E58A2 /* Profile.storyboard */; };
 		59E8A6312B25B273005E58A2 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8A6302B25B273005E58A2 /* FilterView.swift */; };
 		59E8A6332B25B2D1005E58A2 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E8A6322B25B2D1005E58A2 /* FilterView.xib */; };
+		5EA3167084794A8F7445E6FC /* Pods_Fylgja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457C2AA00D3A4047D4455BF9 /* Pods_Fylgja.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05AD21D38A8B359F29A3A8AF /* Pods-Fylgja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fylgja.release.xcconfig"; path = "Target Support Files/Pods-Fylgja/Pods-Fylgja.release.xcconfig"; sourceTree = "<group>"; };
+		457C2AA00D3A4047D4455BF9 /* Pods_Fylgja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fylgja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		598A97F22B1B286F0041EB31 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
 		598A97F42B1B287B0041EB31 /* Logo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logo.storyboard; sourceTree = "<group>"; };
 		598A97F62B1C66DA0041EB31 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 		59E8A62E2B25ADCB005E58A2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		59E8A6302B25B273005E58A2 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		59E8A6322B25B2D1005E58A2 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		F346B91F01D0E16B37F8D4F5 /* Pods-Fylgja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fylgja.debug.xcconfig"; path = "Target Support Files/Pods-Fylgja/Pods-Fylgja.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA3167084794A8F7445E6FC /* Pods_Fylgja.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +155,8 @@
 			children = (
 				598C11292B0A011F008B6005 /* Fylgja */,
 				598C11282B0A011F008B6005 /* Products */,
+				9B96D7FC7260420A3A682ABD /* Pods */,
+				D6EDABC95D49B6217E47B83E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,6 +263,24 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		9B96D7FC7260420A3A682ABD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F346B91F01D0E16B37F8D4F5 /* Pods-Fylgja.debug.xcconfig */,
+				05AD21D38A8B359F29A3A8AF /* Pods-Fylgja.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6EDABC95D49B6217E47B83E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				457C2AA00D3A4047D4455BF9 /* Pods_Fylgja.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 598C113B2B0A0120008B6005 /* Build configuration list for PBXNativeTarget "Fylgja" */;
 			buildPhases = (
+				7D7B7A4EC00396CA171060E7 /* [CP] Check Pods Manifest.lock */,
 				598C11232B0A011F008B6005 /* Sources */,
 				598C11242B0A011F008B6005 /* Frameworks */,
 				598C11252B0A011F008B6005 /* Resources */,
+				DFCB1751E56B59050F605B9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +362,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D7B7A4EC00396CA171060E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fylgja-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFCB1751E56B59050F605B9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fylgja/Pods-Fylgja-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fylgja/Pods-Fylgja-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fylgja/Pods-Fylgja-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		598C11232B0A011F008B6005 /* Sources */ = {
@@ -510,6 +579,7 @@
 		};
 		598C113C2B0A0120008B6005 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F346B91F01D0E16B37F8D4F5 /* Pods-Fylgja.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -544,6 +614,7 @@
 		};
 		598C113D2B0A0120008B6005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05AD21D38A8B359F29A3A8AF /* Pods-Fylgja.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -16,6 +16,8 @@ class SearchView: UIView, NibOwnerLoadable {
             backgroundView.layer.borderColor = #colorLiteral(red: 0.7333333333, green: 0.7333333333, blue: 0.7333333333, alpha: 1)
         }
     }
+    
+    @IBOutlet weak var filterBtn:UIButton!
         
     override init(frame: CGRect) {
         super.init(frame: frame)

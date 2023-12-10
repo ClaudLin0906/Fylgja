@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import FlexibleSteppedProgressBar
 
 class FilterView: UIView , NibOwnerLoadable {
+    
+    @IBOutlet weak var progressBar: FlexibleSteppedProgressBar!
             
     override init(frame: CGRect) {
         super.init(frame: frame)

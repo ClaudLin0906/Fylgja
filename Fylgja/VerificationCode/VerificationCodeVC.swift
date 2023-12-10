@@ -57,7 +57,7 @@ extension VerificationCodeVC: UITextFieldDelegate{
                 }else{
                 //當tag到最後時響應者會是nil此時執行將鍵盤收起的function
                     self.view.endEditing(true)
-                    let smsCodeStr = (firstTextFieldView.textField.text ?? "") + (secondTextFieldView.textField.text ?? "") + (thirdTextFieldView.textField.text ?? "") + (fourthTextFieldView.textField.text ?? "")
+                    _ = (firstTextFieldView.textField.text ?? "") + (secondTextFieldView.textField.text ?? "") + (thirdTextFieldView.textField.text ?? "") + (fourthTextFieldView.textField.text ?? "")
                     
                     if let mainRootVC = self.view.findParentViewController(ofType: MainRootVC.self) {
                         mainRootVC.removeAllChildViewControllers()

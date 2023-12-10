@@ -22,6 +22,10 @@ class StoreListVC: CustomRootVC {
     }
     
     private func UIInit(){
+        searchView.filterBtn.addTarget(self, action: #selector(filterBtn(_:)), for: .touchUpInside)
+    }
+    
+    @objc private func filterBtn(_ sender:UIButton) {
         
     }
 
