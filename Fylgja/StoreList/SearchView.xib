@@ -43,8 +43,8 @@
                             <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.3.horizontal.decrease.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iWS-bl-8R4">
-                            <rect key="frame" x="348" y="13.333333333333313" width="25" height="23.666666666666664"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter" translatesAutoresizingMaskIntoConstraints="NO" id="iWS-bl-8R4">
+                            <rect key="frame" x="348" y="12.333333333333314" width="25" height="25"/>
                             <color key="tintColor" name="CommonColor"/>
                         </imageView>
                     </subviews>
@@ -83,7 +83,7 @@
         </view>
     </objects>
     <resources>
-        <image name="line.3.horizontal.decrease.circle" catalog="system" width="128" height="123"/>
+        <image name="filter" width="512" height="512"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <namedColor name="CommonColor">
             <color red="0.070588235294117646" green="0.396078431372549" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
