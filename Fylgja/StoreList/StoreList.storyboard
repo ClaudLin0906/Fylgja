@@ -243,30 +243,21 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="7EB-Zr-ia8"/>
                                 </connections>
                             </tableView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TkU-WD-iCK" userLabel="HiddenView">
-                                <rect key="frame" x="0.0" y="153" width="393" height="665"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80062482146178782" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yrn-ie-Uo9" secondAttribute="bottom" id="16m-E6-tHH"/>
-                            <constraint firstItem="TkU-WD-iCK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="75H-6u-UqU"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TkU-WD-iCK" secondAttribute="trailing" id="BJj-gt-X1i"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V6f-ov-Kws" secondAttribute="trailing" constant="20" id="Ig4-KM-FwY"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TkU-WD-iCK" secondAttribute="bottom" id="JCv-pV-4nZ"/>
                             <constraint firstItem="V6f-ov-Kws" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="SCL-k2-dBe"/>
                             <constraint firstItem="yrn-ie-Uo9" firstAttribute="top" secondItem="V6f-ov-Kws" secondAttribute="bottom" constant="50" id="XQL-rE-fJL"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yrn-ie-Uo9" secondAttribute="trailing" id="hsT-bA-ptF"/>
                             <constraint firstItem="V6f-ov-Kws" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mas-mC-5hC"/>
-                            <constraint firstItem="TkU-WD-iCK" firstAttribute="top" secondItem="V6f-ov-Kws" secondAttribute="bottom" id="qXq-ak-YEh"/>
                             <constraint firstItem="yrn-ie-Uo9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qcZ-i5-7CO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gDF-Ej-Ued"/>
                     <connections>
-                        <outlet property="hiddenView" destination="TkU-WD-iCK" id="yia-pb-6K0"/>
                         <outlet property="searchView" destination="V6f-ov-Kws" id="3xR-WC-8wH"/>
                         <outlet property="tableView" destination="yrn-ie-Uo9" id="yMT-rx-YyJ"/>
                     </connections>

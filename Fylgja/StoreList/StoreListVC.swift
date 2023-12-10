@@ -13,8 +13,6 @@ class StoreListVC: CustomRootVC {
     
     @IBOutlet weak var searchView:SearchView!
     
-    @IBOutlet weak var hiddenView:UIView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         UIInit()
