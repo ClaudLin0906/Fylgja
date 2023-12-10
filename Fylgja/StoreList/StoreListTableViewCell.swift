@@ -21,10 +21,22 @@ class StoreListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var stackView:UIStackView!
     
+    @IBOutlet weak var storeImageView:UIImageView!
+    {
+        didSet{
+            storeImageView.layer.masksToBounds = true
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
         // Initialization code
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        stackView.removeFullyAllArrangedSubviews()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -47,6 +47,7 @@
 		598C118B2B11FC29008B6005 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C118A2B11FC29008B6005 /* MainTabBarController.swift */; };
 		598C118D2B120183008B6005 /* VerificationCodeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C118C2B120183008B6005 /* VerificationCodeTextFieldView.swift */; };
 		598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598C118E2B1201D4008B6005 /* VerificationCodeTextFieldView.xib */; };
+		59E8A62A2B259AD4005E58A2 /* ADTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8A6292B259AD4005E58A2 /* ADTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		598C118A2B11FC29008B6005 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		598C118C2B120183008B6005 /* VerificationCodeTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeTextFieldView.swift; sourceTree = "<group>"; };
 		598C118E2B1201D4008B6005 /* VerificationCodeTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationCodeTextFieldView.xib; sourceTree = "<group>"; };
+		59E8A6292B259AD4005E58A2 /* ADTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				598A98142B231AAE0041EB31 /* WaitStatusView.xib */,
 				598A98162B23EFA70041EB31 /* TagView.swift */,
 				598A98182B23EFE40041EB31 /* TagView.xib */,
+				59E8A6292B259AD4005E58A2 /* ADTableViewCell.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				598C118D2B120183008B6005 /* VerificationCodeTextFieldView.swift in Sources */,
 				598C11432B0A0BBB008B6005 /* Extension.swift in Sources */,
 				598C113F2B0A0201008B6005 /* LogoAnimationVC.swift in Sources */,
+				59E8A62A2B259AD4005E58A2 /* ADTableViewCell.swift in Sources */,
 				598C11852B11FB35008B6005 /* WaitingListVC.swift in Sources */,
 				598C118B2B11FC29008B6005 /* MainTabBarController.swift in Sources */,
 				598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */,

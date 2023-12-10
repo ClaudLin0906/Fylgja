@@ -15,20 +15,13 @@ class StoreListVC: CustomRootVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        UIInit()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func UIInit(){
+        
     }
-    */
 
 }
 
@@ -39,17 +32,25 @@ extension StoreListVC: UITableViewDelegate {
 extension StoreListVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let row = indexPath.row
+        if row % 3 == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: ADTableViewCell.identifier, for: indexPath) as! ADTableViewCell
+            return cell
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: StoreListTableViewCell.identifier, for: indexPath) as! StoreListTableViewCell
-        if indexPath.row % 2 == 1 {
+        if row >= 3 && row % 3 == 2 {
             cell.setCell(.open, ["義大利麵", "輕食", "排餐"])
+            return cell
         }
-        if indexPath.row % 2 == 0 {
+        if row >= 3 && row % 3 == 0 {
             cell.setCell(.close, ["炸物", "茶飲", "排餐"])
+            return cell
         }
+        cell.setCell(.open, ["牛排", "排餐"])
         return cell
     }
     
