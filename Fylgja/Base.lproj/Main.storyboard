@@ -65,6 +65,7 @@
                     <connections>
                         <segue destination="BaV-cU-Fox" kind="relationship" relationship="viewControllers" id="Uud-kx-5JE"/>
                         <segue destination="bTv-tv-9Dh" kind="relationship" relationship="viewControllers" id="9sI-g9-hbe"/>
+                        <segue destination="Tkv-2Q-Cbk" kind="relationship" relationship="viewControllers" id="vfv-sv-SbT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Jy-gq-GsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,10 +90,22 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qL-h2-RX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064" y="112"/>
+            <point key="canvasLocation" x="2156" y="19"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Pd2-ND-WIo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="Tkv-2Q-Cbk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="個人" image="man-gray" selectedImage="man-active" id="Rhw-Dv-JFx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqu-5G-VFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144" y="97"/>
         </scene>
     </scenes>
     <resources>
+        <image name="man-active" width="512" height="512"/>
+        <image name="man-gray" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

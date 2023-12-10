@@ -38,7 +38,6 @@ class WaitingListVC: CustomRootVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        tableData.append(contentsOf: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
         tableData.removeAll()
     }
     

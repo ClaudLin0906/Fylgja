@@ -14,19 +14,22 @@ class MainTabBarController: UITabBarController {
     private let tabbarTitle:[String] =
     [
         "候位",
-        "選擇"
+        "發現",
+        "個人"
     ]
     
     private let noSelectImages:[UIImage?] =
     [
-        UIImage(systemName: "house.fill"),
-        UIImage(systemName: "opticaldisc.fill")
+        UIImage(named: "hourglass-gray"),
+        UIImage(named: "store-gray"),
+        UIImage(named: "man-gray")
     ]
     
     private let selectImages:[UIImage?] =
     [
-        UIImage(systemName: "house.fill"),
-        UIImage(systemName: "opticaldisc.fill")
+        UIImage(named: "hourglass-active"),
+        UIImage(named: "store-active"),
+        UIImage(named: "man-active")
     ]
 
     override func viewDidLoad() {

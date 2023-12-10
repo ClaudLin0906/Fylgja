@@ -48,6 +48,8 @@
 		598C118D2B120183008B6005 /* VerificationCodeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C118C2B120183008B6005 /* VerificationCodeTextFieldView.swift */; };
 		598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598C118E2B1201D4008B6005 /* VerificationCodeTextFieldView.xib */; };
 		59E8A62A2B259AD4005E58A2 /* ADTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8A6292B259AD4005E58A2 /* ADTableViewCell.swift */; };
+		59E8A62D2B25ADB5005E58A2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8A62C2B25ADB5005E58A2 /* ProfileVC.swift */; };
+		59E8A62F2B25ADCB005E58A2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E8A62E2B25ADCB005E58A2 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		598C118C2B120183008B6005 /* VerificationCodeTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeTextFieldView.swift; sourceTree = "<group>"; };
 		598C118E2B1201D4008B6005 /* VerificationCodeTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationCodeTextFieldView.xib; sourceTree = "<group>"; };
 		59E8A6292B259AD4005E58A2 /* ADTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADTableViewCell.swift; sourceTree = "<group>"; };
+		59E8A62C2B25ADB5005E58A2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		59E8A62E2B25ADCB005E58A2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 				598C118A2B11FC29008B6005 /* MainTabBarController.swift */,
 				598A97F82B1C680B0041EB31 /* CustomRootVC.swift */,
 				598A97F62B1C66DA0041EB31 /* CustomVC.swift */,
+				59E8A62B2B25AD8B005E58A2 /* Profile */,
 				598A98072B22FB240041EB31 /* StoreList */,
 				598A98062B1C92A00041EB31 /* Scan */,
 				598A97F12B1B285B0041EB31 /* Logo */,
@@ -236,6 +241,15 @@
 			path = WaitingList;
 			sourceTree = "<group>";
 		};
+		59E8A62B2B25AD8B005E58A2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				59E8A62C2B25ADB5005E58A2 /* ProfileVC.swift */,
+				59E8A62E2B25ADCB005E58A2 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,6 +318,7 @@
 				598C11372B0A0120008B6005 /* LaunchScreen.storyboard in Resources */,
 				598C11872B11FB3C008B6005 /* WaitingList.storyboard in Resources */,
 				598C11342B0A0120008B6005 /* Assets.xcassets in Resources */,
+				59E8A62F2B25ADCB005E58A2 /* Profile.storyboard in Resources */,
 				598A98052B1C88770041EB31 /* ScanBtn.xib in Resources */,
 				598C11742B11D334008B6005 /* Login.storyboard in Resources */,
 				598A98152B231AAE0041EB31 /* WaitStatusView.xib in Resources */,
@@ -340,6 +355,7 @@
 				598C118B2B11FC29008B6005 /* MainTabBarController.swift in Sources */,
 				598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */,
 				598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */,
+				59E8A62D2B25ADB5005E58A2 /* ProfileVC.swift in Sources */,
 				598A98132B231AA20041EB31 /* WaitStatusView.swift in Sources */,
 				598A98112B23134C0041EB31 /* StoreListTableViewCell.swift in Sources */,
 				598C11762B11DEF4008B6005 /* PhoneTextFieldView.swift in Sources */,
