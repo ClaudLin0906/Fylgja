@@ -12,6 +12,8 @@ class StoreListVC: CustomRootVC {
     @IBOutlet weak var tableView:UITableView!
     
     @IBOutlet weak var searchView:SearchView!
+    
+    @IBOutlet weak var hiddenView:UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,6 +10,12 @@ import UIKit
 class SearchView: UIView, NibOwnerLoadable {
     
     @IBOutlet weak var backgroundView:UIView!
+    {
+        didSet{
+            backgroundView.layer.borderWidth = 1
+            backgroundView.layer.borderColor = #colorLiteral(red: 0.7333333333, green: 0.7333333333, blue: 0.7333333333, alpha: 1)
+        }
+    }
         
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,8 +29,6 @@ class SearchView: UIView, NibOwnerLoadable {
     
     private func customInit(){
         loadNibContent()
-        backgroundView.layer.borderWidth = 1
-        backgroundView.layer.borderColor = #colorLiteral(red: 0.7333333333, green: 0.7333333333, blue: 0.7333333333, alpha: 1)
     }
 
 }

@@ -50,6 +50,8 @@
 		59E8A62A2B259AD4005E58A2 /* ADTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8A6292B259AD4005E58A2 /* ADTableViewCell.swift */; };
 		59E8A62D2B25ADB5005E58A2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8A62C2B25ADB5005E58A2 /* ProfileVC.swift */; };
 		59E8A62F2B25ADCB005E58A2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E8A62E2B25ADCB005E58A2 /* Profile.storyboard */; };
+		59E8A6312B25B273005E58A2 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8A6302B25B273005E58A2 /* FilterView.swift */; };
+		59E8A6332B25B2D1005E58A2 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E8A6322B25B2D1005E58A2 /* FilterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		59E8A6292B259AD4005E58A2 /* ADTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADTableViewCell.swift; sourceTree = "<group>"; };
 		59E8A62C2B25ADB5005E58A2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		59E8A62E2B25ADCB005E58A2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		59E8A6302B25B273005E58A2 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		59E8A6322B25B2D1005E58A2 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				598A98102B23134C0041EB31 /* StoreListTableViewCell.swift */,
 				598A980C2B22FE560041EB31 /* SearchView.swift */,
 				598A980E2B22FE890041EB31 /* SearchView.xib */,
+				59E8A6302B25B273005E58A2 /* FilterView.swift */,
+				59E8A6322B25B2D1005E58A2 /* FilterView.xib */,
 			);
 			path = StoreList;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 				598C11742B11D334008B6005 /* Login.storyboard in Resources */,
 				598A98152B231AAE0041EB31 /* WaitStatusView.xib in Resources */,
 				598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */,
+				59E8A6332B25B2D1005E58A2 /* FilterView.xib in Resources */,
 				598C11322B0A011F008B6005 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E8A6312B25B273005E58A2 /* FilterView.swift in Sources */,
 				598C114B2B0A0D9E008B6005 /* Common.swift in Sources */,
 				598A98032B1C885E0041EB31 /* ScanBtn.swift in Sources */,
 				598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */,
