@@ -13,6 +13,8 @@ class StoreListVC: CustomRootVC {
     
     @IBOutlet weak var searchView:SearchView!
     
+    private var filterView:FilterView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UIInit()
@@ -24,7 +26,15 @@ class StoreListVC: CustomRootVC {
     }
     
     @objc private func filterBtn(_ sender:UIButton) {
-        
+        if let filterVC = UIStoryboard(name: "Filter", bundle: nil).instantiateViewController(withIdentifier: "Filter") as? FilterVC {
+            if let sheet = filterVC.sheetPresentationController {
+                sheet.detents = [.medium()]
+                sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+                sheet.prefersGrabberVisible = true
+                sheet.largestUndimmedDetentIdentifier = .large
+            }
+            present(filterVC, animated: true, completion: nil)
+        }
     }
 
 }
@@ -57,5 +67,9 @@ extension StoreListVC: UITableViewDataSource {
         cell.setCell(.open, ["牛排", "排餐"])
         return cell
     }
+    
+}
+
+extension StoreListVC: UIViewControllerTransitioningDelegate, UISheetPresentationControllerDelegate {
     
 }

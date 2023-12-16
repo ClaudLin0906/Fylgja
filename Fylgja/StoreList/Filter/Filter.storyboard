@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FilterVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Filter" id="Y6W-OH-hqX" customClass="FilterVC" customModule="Fylgja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="排序與篩選" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAA-4C-3OT">
+                                <rect key="frame" x="0.0" y="79" width="393" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="m6D-Qr-t4t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家狀態" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="job-WZ-7m4">
+                                <rect key="frame" x="20" y="119" width="56" height="20"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbL-qz-pvd">
+                                <rect key="frame" x="20" y="164" width="100" height="25"/>
+                                <color key="backgroundColor" name="CommonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="An6-t0-Y2T"/>
+                                    <constraint firstAttribute="width" constant="100" id="kZ9-Yh-8iL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="開放候位中">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVC-L9-Pv4">
+                                <rect key="frame" x="135" y="164" width="100" height="25"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="暫停候位中">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家評分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyt-EG-WGu">
+                                <rect key="frame" x="20" y="214" width="56" height="20"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brw-ta-lVZ" customClass="FlexibleSteppedProgressBar" customModule="FlexibleSteppedProgressBar">
+                                <rect key="frame" x="20" y="259" width="353" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="GDp-7R-eQn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="候位組數" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLK-GP-gbs">
+                                <rect key="frame" x="20" y="304" width="56" height="20"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="job-WZ-7m4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0Za-C4-OzG"/>
+                            <constraint firstItem="BbL-qz-pvd" firstAttribute="leading" secondItem="job-WZ-7m4" secondAttribute="leading" id="3bZ-ey-lZW"/>
+                            <constraint firstItem="BbL-qz-pvd" firstAttribute="top" secondItem="job-WZ-7m4" secondAttribute="bottom" constant="25" id="4bs-fj-E7t"/>
+                            <constraint firstItem="wVC-L9-Pv4" firstAttribute="leading" secondItem="BbL-qz-pvd" secondAttribute="trailing" constant="15" id="6yX-0C-lhp"/>
+                            <constraint firstItem="brw-ta-lVZ" firstAttribute="top" secondItem="Oyt-EG-WGu" secondAttribute="bottom" constant="25" id="Ihl-ro-dPY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fAA-4C-3OT" secondAttribute="trailing" id="JEq-da-B9L"/>
+                            <constraint firstItem="job-WZ-7m4" firstAttribute="top" secondItem="fAA-4C-3OT" secondAttribute="bottom" constant="15" id="JPk-8F-4oh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="brw-ta-lVZ" secondAttribute="trailing" constant="20" id="KHV-FW-C5s"/>
+                            <constraint firstItem="NLK-GP-gbs" firstAttribute="leading" secondItem="brw-ta-lVZ" secondAttribute="leading" id="KhQ-wH-pNC"/>
+                            <constraint firstItem="fAA-4C-3OT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="LCx-2B-VWO"/>
+                            <constraint firstItem="brw-ta-lVZ" firstAttribute="leading" secondItem="Oyt-EG-WGu" secondAttribute="leading" id="RgG-Dd-xwt"/>
+                            <constraint firstItem="wVC-L9-Pv4" firstAttribute="centerY" secondItem="BbL-qz-pvd" secondAttribute="centerY" id="ZPU-x5-Ugu"/>
+                            <constraint firstItem="Oyt-EG-WGu" firstAttribute="top" secondItem="BbL-qz-pvd" secondAttribute="bottom" constant="25" id="fQU-Io-eZR"/>
+                            <constraint firstItem="NLK-GP-gbs" firstAttribute="top" secondItem="brw-ta-lVZ" secondAttribute="bottom" constant="25" id="j4m-f5-XSC"/>
+                            <constraint firstItem="Oyt-EG-WGu" firstAttribute="leading" secondItem="BbL-qz-pvd" secondAttribute="leading" id="jeM-2u-Gam"/>
+                            <constraint firstItem="fAA-4C-3OT" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="k9j-Tg-xMZ"/>
+                            <constraint firstItem="wVC-L9-Pv4" firstAttribute="width" secondItem="BbL-qz-pvd" secondAttribute="width" id="mvF-oa-izA"/>
+                            <constraint firstItem="wVC-L9-Pv4" firstAttribute="height" secondItem="BbL-qz-pvd" secondAttribute="height" id="ruH-EM-2Ts"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="CommonColor">
+            <color red="0.070588235294117646" green="0.396078431372549" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

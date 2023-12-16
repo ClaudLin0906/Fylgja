@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5964A58A2B2D7D420004C53D /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5892B2D7D420004C53D /* FilterVC.swift */; };
+		5964A58C2B2D84FF0004C53D /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5964A58B2B2D84FF0004C53D /* Filter.storyboard */; };
+		5964A58F2B2D90E00004C53D /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A58E2B2D90E00004C53D /* CalculateView.swift */; };
+		5964A5912B2D91020004C53D /* CalculateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5964A5902B2D91020004C53D /* CalculateView.xib */; };
 		598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F22B1B286F0041EB31 /* LogoVC.swift */; };
 		598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598A97F42B1B287B0041EB31 /* Logo.storyboard */; };
 		598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F62B1C66DA0041EB31 /* CustomVC.swift */; };
@@ -58,6 +62,10 @@
 /* Begin PBXFileReference section */
 		05AD21D38A8B359F29A3A8AF /* Pods-Fylgja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fylgja.release.xcconfig"; path = "Target Support Files/Pods-Fylgja/Pods-Fylgja.release.xcconfig"; sourceTree = "<group>"; };
 		457C2AA00D3A4047D4455BF9 /* Pods_Fylgja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fylgja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5964A5892B2D7D420004C53D /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		5964A58B2B2D84FF0004C53D /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
+		5964A58E2B2D90E00004C53D /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
+		5964A5902B2D91020004C53D /* CalculateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculateView.xib; sourceTree = "<group>"; };
 		598A97F22B1B286F0041EB31 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
 		598A97F42B1B287B0041EB31 /* Logo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logo.storyboard; sourceTree = "<group>"; };
 		598A97F62B1C66DA0041EB31 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
@@ -120,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5964A58D2B2D86C10004C53D /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				5964A5892B2D7D420004C53D /* FilterVC.swift */,
+				5964A58B2B2D84FF0004C53D /* Filter.storyboard */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		598A97F12B1B285B0041EB31 /* Logo */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +163,7 @@
 				598A980E2B22FE890041EB31 /* SearchView.xib */,
 				59E8A6302B25B273005E58A2 /* FilterView.swift */,
 				59E8A6322B25B2D1005E58A2 /* FilterView.xib */,
+				5964A58D2B2D86C10004C53D /* Filter */,
 			);
 			path = StoreList;
 			sourceTree = "<group>";
@@ -209,6 +227,8 @@
 				598A98162B23EFA70041EB31 /* TagView.swift */,
 				598A98182B23EFE40041EB31 /* TagView.xib */,
 				59E8A6292B259AD4005E58A2 /* ADTableViewCell.swift */,
+				5964A58E2B2D90E00004C53D /* CalculateView.swift */,
+				5964A5902B2D91020004C53D /* CalculateView.xib */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -269,7 +289,6 @@
 				F346B91F01D0E16B37F8D4F5 /* Pods-Fylgja.debug.xcconfig */,
 				05AD21D38A8B359F29A3A8AF /* Pods-Fylgja.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -343,6 +362,7 @@
 			files = (
 				598C11822B11F9BD008B6005 /* VerificationCode.storyboard in Resources */,
 				598A98192B23EFE40041EB31 /* TagView.xib in Resources */,
+				5964A58C2B2D84FF0004C53D /* Filter.storyboard in Resources */,
 				598C11492B0A0C71008B6005 /* AskLocationPremission.storyboard in Resources */,
 				598C11782B11DF7B008B6005 /* PhoneTextFieldView.xib in Resources */,
 				598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */,
@@ -351,6 +371,7 @@
 				598C11372B0A0120008B6005 /* LaunchScreen.storyboard in Resources */,
 				598C11872B11FB3C008B6005 /* WaitingList.storyboard in Resources */,
 				598C11342B0A0120008B6005 /* Assets.xcassets in Resources */,
+				5964A5912B2D91020004C53D /* CalculateView.xib in Resources */,
 				59E8A62F2B25ADCB005E58A2 /* Profile.storyboard in Resources */,
 				598A98052B1C88770041EB31 /* ScanBtn.xib in Resources */,
 				598C11742B11D334008B6005 /* Login.storyboard in Resources */,
@@ -411,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59E8A6312B25B273005E58A2 /* FilterView.swift in Sources */,
+				5964A58F2B2D90E00004C53D /* CalculateView.swift in Sources */,
 				598C114B2B0A0D9E008B6005 /* Common.swift in Sources */,
 				598A98032B1C885E0041EB31 /* ScanBtn.swift in Sources */,
 				598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */,
@@ -428,6 +450,7 @@
 				598C11432B0A0BBB008B6005 /* Extension.swift in Sources */,
 				598C113F2B0A0201008B6005 /* LogoAnimationVC.swift in Sources */,
 				59E8A62A2B259AD4005E58A2 /* ADTableViewCell.swift in Sources */,
+				5964A58A2B2D7D420004C53D /* FilterVC.swift in Sources */,
 				598C11852B11FB35008B6005 /* WaitingListVC.swift in Sources */,
 				598C118B2B11FC29008B6005 /* MainTabBarController.swift in Sources */,
 				598C112D2B0A011F008B6005 /* SceneDelegate.swift in Sources */,
@@ -513,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -567,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -595,7 +618,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,7 +653,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

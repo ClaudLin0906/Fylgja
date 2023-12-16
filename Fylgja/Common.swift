@@ -10,7 +10,8 @@ import UIKit
 
 var isLogin = false
 
-let keyWindow = UIApplication.shared.windows.filter({ $0.isKeyWindow }).last
+let keyWindow = UIApplication.shared.connectedScenes.map(({$0 as? UIWindowScene})).compactMap(({$0})).first?.windows.first
+
 
 protocol NibOwnerLoadable: AnyObject {
     static var nib: UINib { get }
@@ -56,8 +57,6 @@ enum TagStatus {
 let commonColor = #colorLiteral(red: 0.07058823529, green: 0.3960784314, blue: 0.6431372549, alpha: 1)
 
 func getSuperController() -> UIViewController? {
-    let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-
     if var topController = keyWindow?.rootViewController {
         while let presentedViewController = topController.presentedViewController {
             topController = presentedViewController
