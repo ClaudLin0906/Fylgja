@@ -13,8 +13,6 @@ class StoreListVC: CustomRootVC {
     
     @IBOutlet weak var searchView:SearchView!
     
-    private var filterView:FilterView?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         UIInit()
@@ -28,10 +26,10 @@ class StoreListVC: CustomRootVC {
     @objc private func filterBtn(_ sender:UIButton) {
         if let filterVC = UIStoryboard(name: "Filter", bundle: nil).instantiateViewController(withIdentifier: "Filter") as? FilterVC {
             if let sheet = filterVC.sheetPresentationController {
-                sheet.detents = [.medium()]
+                sheet.detents = [.medium(), .large()]
                 sheet.prefersScrollingExpandsWhenScrolledToEdge = false
                 sheet.prefersGrabberVisible = true
-                sheet.largestUndimmedDetentIdentifier = .large
+                sheet.largestUndimmedDetentIdentifier = .medium
             }
             present(filterVC, animated: true, completion: nil)
         }
