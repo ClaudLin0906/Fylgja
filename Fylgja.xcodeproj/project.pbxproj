@@ -14,6 +14,8 @@
 		5964A5942B2D9A1B0004C53D /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5922B2D9A1B0004C53D /* TagCollectionViewCell.swift */; };
 		5964A5952B2D9A1B0004C53D /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5964A5932B2D9A1B0004C53D /* TagCollectionViewCell.xib */; };
 		5964A5972B2D9D190004C53D /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5962B2D9D190004C53D /* FilterModel.swift */; };
+		5964A5992B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5982B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift */; };
+		5964A59B2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5964A59A2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib */; };
 		598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F22B1B286F0041EB31 /* LogoVC.swift */; };
 		598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598A97F42B1B287B0041EB31 /* Logo.storyboard */; };
 		598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F62B1C66DA0041EB31 /* CustomVC.swift */; };
@@ -70,6 +72,8 @@
 		5964A5922B2D9A1B0004C53D /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		5964A5932B2D9A1B0004C53D /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		5964A5962B2D9D190004C53D /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
+		5964A5982B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleSteppedProgressBarView.swift; sourceTree = "<group>"; };
+		5964A59A2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlexibleSteppedProgressBarView.xib; sourceTree = "<group>"; };
 		598A97F22B1B286F0041EB31 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
 		598A97F42B1B287B0041EB31 /* Logo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logo.storyboard; sourceTree = "<group>"; };
 		598A97F62B1C66DA0041EB31 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				598A980C2B22FE560041EB31 /* SearchView.swift */,
 				598A980E2B22FE890041EB31 /* SearchView.xib */,
 				5964A58D2B2D86C10004C53D /* Filter */,
+				5964A5982B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift */,
+				5964A59A2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib */,
 			);
 			path = StoreList;
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 				598A98052B1C88770041EB31 /* ScanBtn.xib in Resources */,
 				5964A5952B2D9A1B0004C53D /* TagCollectionViewCell.xib in Resources */,
 				598C11742B11D334008B6005 /* Login.storyboard in Resources */,
+				5964A59B2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib in Resources */,
 				598A98152B231AAE0041EB31 /* WaitStatusView.xib in Resources */,
 				598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */,
 				598C11322B0A011F008B6005 /* Main.storyboard in Resources */,
@@ -438,6 +445,7 @@
 				598C114B2B0A0D9E008B6005 /* Common.swift in Sources */,
 				598A98032B1C885E0041EB31 /* ScanBtn.swift in Sources */,
 				598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */,
+				5964A5992B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift in Sources */,
 				598A97FB2B1C689C0041EB31 /* WaitingTableViewCell.swift in Sources */,
 				598C11802B11F9B1008B6005 /* VerificationCodeVC.swift in Sources */,
 				598C11412B0A021B008B6005 /* MainRootVC.swift in Sources */,

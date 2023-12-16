@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		09FB0167930A7A0CA19EF64E7298A3F5 /* FSPBTextLayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPBTextLayerExtension.swift; path = FlexibleSteppedProgressBar/Classes/FSPBTextLayerExtension.swift; sourceTree = "<group>"; };
 		0CEF8A4B9DEC6C407314DC06597E6FE3 /* Pods-Fylgja-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fylgja-frameworks.sh"; sourceTree = "<group>"; };
-		114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexibleSteppedProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexibleSteppedProgressBar; path = FlexibleSteppedProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A37D6CE0A79449789D92302CF4BECD6 /* FlexibleSteppedProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexibleSteppedProgressBar-Info.plist"; sourceTree = "<group>"; };
 		2CD188B952E8CCD860BDE38048B07636 /* FlexibleSteppedProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleSteppedProgressBar-prefix.pch"; sourceTree = "<group>"; };
 		4933C94730E0A103475D97140247F5AE /* FlexibleSteppedProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexibleSteppedProgressBar-dummy.m"; sourceTree = "<group>"; };
@@ -45,8 +45,8 @@
 		705682AFE4BA92B1F935919017E2D013 /* Pods-Fylgja-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fylgja-Info.plist"; sourceTree = "<group>"; };
 		71EFAC0F72D6CA64FD159FF94BC96070 /* FlexibleSteppedProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleSteppedProgressBar.swift; path = FlexibleSteppedProgressBar/Classes/FlexibleSteppedProgressBar.swift; sourceTree = "<group>"; };
 		9AAD32D0B0F4680D71210C04076D4F0E /* FlexibleSteppedProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexibleSteppedProgressBar.modulemap; sourceTree = "<group>"; };
-		9C9015752C3C9A531A9E10A141A5B10F /* Pods_Fylgja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fylgja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C9015752C3C9A531A9E10A141A5B10F /* Pods-Fylgja */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Fylgja"; path = Pods_Fylgja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FA33B7119A9F974F4D8BEF6253E518E /* Pods-Fylgja-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fylgja-acknowledgements.plist"; sourceTree = "<group>"; };
 		A0758AC1A7740B364767FAD3B803D90F /* Pods-Fylgja-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fylgja-umbrella.h"; sourceTree = "<group>"; };
 		AC8A40E76116F98CAF0A1370F39E533F /* Pods-Fylgja-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fylgja-dummy.m"; sourceTree = "<group>"; };
@@ -136,14 +136,15 @@
 				09FB0167930A7A0CA19EF64E7298A3F5 /* FSPBTextLayerExtension.swift */,
 				1FBB51048B8CE1E2C5A208532DBB6E61 /* Support Files */,
 			);
+			name = FlexibleSteppedProgressBar;
 			path = FlexibleSteppedProgressBar;
 			sourceTree = "<group>";
 		};
 		7DD89C2AEC94582CA6AD5BAD08D6D903 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar.framework */,
-				9C9015752C3C9A531A9E10A141A5B10F /* Pods_Fylgja.framework */,
+				114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar */,
+				9C9015752C3C9A531A9E10A141A5B10F /* Pods-Fylgja */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,7 +214,7 @@
 			);
 			name = FlexibleSteppedProgressBar;
 			productName = FlexibleSteppedProgressBar;
-			productReference = 114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar.framework */;
+			productReference = 114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar */;
 			productType = "com.apple.product-type.framework";
 		};
 		B9686D38E8025723F9FCE91F01F2AED4 /* Pods-Fylgja */ = {
@@ -232,7 +233,7 @@
 			);
 			name = "Pods-Fylgja";
 			productName = Pods_Fylgja;
-			productReference = 9C9015752C3C9A531A9E10A141A5B10F /* Pods_Fylgja.framework */;
+			productReference = 9C9015752C3C9A531A9E10A141A5B10F /* Pods-Fylgja */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -328,7 +329,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,9 +349,9 @@
 			};
 			name = Release;
 		};
-		2C875887545773E50241BE01C31341AB /* Release */ = {
+		3BB034F6A00AE5C685BAD5C6C15C3A6B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B56FE7AE0156D695308D2073EE30577 /* Pods-Fylgja.release.xcconfig */;
+			baseConfigurationReference = 4E0FBCCAB1133311D09CE030686BB195 /* Pods-Fylgja.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -380,13 +381,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -452,44 +452,7 @@
 			};
 			name = Debug;
 		};
-		81706A8F21DC24C719729D80F80BBED5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E0FBCCAB1133311D09CE030686BB195 /* Pods-Fylgja.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Fylgja/Pods-Fylgja-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Fylgja/Pods-Fylgja.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -551,6 +514,44 @@
 			};
 			name = Release;
 		};
+		AC5CC7BC5CBF84319C25CF59B612BAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B56FE7AE0156D695308D2073EE30577 /* Pods-Fylgja.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Fylgja/Pods-Fylgja-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Fylgja/Pods-Fylgja.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D2FCC3FF9B6AD100B7D3A053FE7915F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56164CF34D15F373150013251214D46B /* FlexibleSteppedProgressBar.debug.xcconfig */;
@@ -566,7 +567,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,8 +592,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
-				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -600,8 +601,8 @@
 		835EFA3A6D566D4E2EFA9E3ED9E8927A /* Build configuration list for PBXNativeTarget "Pods-Fylgja" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81706A8F21DC24C719729D80F80BBED5 /* Debug */,
-				2C875887545773E50241BE01C31341AB /* Release */,
+				3BB034F6A00AE5C685BAD5C6C15C3A6B /* Debug */,
+				AC5CC7BC5CBF84319C25CF59B612BAB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
