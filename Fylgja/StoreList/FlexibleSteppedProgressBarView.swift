@@ -31,12 +31,14 @@ class FlexibleSteppedProgressBarView: UIView, NibOwnerLoadable {
     
     private func customInit(){
         loadNibContent()
+        let labelTextAttributes: [NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: 14, weight: .regular), .foregroundColor: UIColor.black]
+
         slider.attributedTextForFraction = { [weak self] fraction in
             let string = self?.formatterToString(fraction)
-            return NSAttributedString(string: string ?? "0")
+            return NSAttributedString(string: string ?? "0", attributes: labelTextAttributes)
         }
-        slider.setMinimumLabelAttributedText(NSAttributedString(string: "0"))
-        slider.setMaximumLabelAttributedText(NSAttributedString(string: "5"))
+        slider.setMinimumLabelAttributedText(NSAttributedString(string: "0", attributes: labelTextAttributes))
+        slider.setMaximumLabelAttributedText(NSAttributedString(string: "5", attributes: labelTextAttributes))
         slider.fraction = 0
         slider.didBeginTracking = { [weak self] _ in
             
