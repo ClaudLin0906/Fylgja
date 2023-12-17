@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlexibleSteppedProgressBarView" customModule="Fylgja" customModuleProvider="target">
             <connections>
-                <outlet property="flexibleSteppedProgressBar" destination="eEx-xj-vlZ" id="yzn-Vg-tZp"/>
+                <outlet property="slider" destination="eEx-xj-vlZ" id="UTL-sE-RSS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEx-xj-vlZ" customClass="FlexibleSteppedProgressBar" customModule="FlexibleSteppedProgressBar">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEx-xj-vlZ" customClass="Slider" customModule="fluid_slider">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                 </view>
             </subviews>

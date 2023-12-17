@@ -7,6 +7,6 @@ target 'Fylgja' do
 
   # Pods for Fylgja
 
- pod "FlexibleSteppedProgressBar"
+ pod 'fluid-slider'
 
 end

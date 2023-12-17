@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Fylgja/Pods-Fylgja-frameworks.sh
-${BUILT_PRODUCTS_DIR}/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar.framework
+${BUILT_PRODUCTS_DIR}/fluid-slider/fluid_slider.framework
+${BUILT_PRODUCTS_DIR}/pop/pop.framework

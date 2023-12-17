@@ -1,16 +1,20 @@
 PODS:
-  - FlexibleSteppedProgressBar (0.7.2)
+  - fluid-slider (1.1.0):
+    - pop
+  - pop (1.0.12)
 
 DEPENDENCIES:
-  - FlexibleSteppedProgressBar
+  - fluid-slider
 
 SPEC REPOS:
   trunk:
-    - FlexibleSteppedProgressBar
+    - fluid-slider
+    - pop
 
 SPEC CHECKSUMS:
-  FlexibleSteppedProgressBar: 6a781cfed749bf59c69813a8706aa397c342ab5c
+  fluid-slider: 68037ac7247f16a89f3e24ff5d0167c8eea6f50b
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
 
-PODFILE CHECKSUM: eed4fdef0e1ba341d2df5260182fef4f685a9da9
+PODFILE CHECKSUM: bc138ede3e55527041cc1d806ffbedd6ce01744d
 
 COCOAPODS: 1.11.3

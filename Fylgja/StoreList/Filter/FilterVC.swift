@@ -6,10 +6,12 @@
 //
 
 import UIKit
-
+import fluid_slider
 class FilterVC: UIViewController {
     
     @IBOutlet weak var collectionView:UICollectionView!
+    
+    @IBOutlet weak var progressBarView:FlexibleSteppedProgressBarView!
     
     private var tagCells: [TagCollectionViewCell] = []
     
@@ -36,6 +38,7 @@ class FilterVC: UIViewController {
         collectionView.register(UINib(nibName: "TagCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "TagCollectionViewCell")
         collectionView.setCollectionViewLayout(UICollectionViewFlowLayout(), animated: false)
         configCells()
+        
     }
     
     func configCells() {
