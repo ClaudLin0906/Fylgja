@@ -16,6 +16,8 @@
 		5964A5972B2D9D190004C53D /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5962B2D9D190004C53D /* FilterModel.swift */; };
 		5964A5992B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5982B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift */; };
 		5964A59B2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5964A59A2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib */; };
+		5964A5A32B2EE3260004C53D /* StoreInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5A22B2EE3260004C53D /* StoreInfoVC.swift */; };
+		5964A5A52B2EE36A0004C53D /* StoreInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5964A5A42B2EE3690004C53D /* StoreInfo.storyboard */; };
 		598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F22B1B286F0041EB31 /* LogoVC.swift */; };
 		598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598A97F42B1B287B0041EB31 /* Logo.storyboard */; };
 		598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F62B1C66DA0041EB31 /* CustomVC.swift */; };
@@ -74,6 +76,8 @@
 		5964A5962B2D9D190004C53D /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
 		5964A5982B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleSteppedProgressBarView.swift; sourceTree = "<group>"; };
 		5964A59A2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlexibleSteppedProgressBarView.xib; sourceTree = "<group>"; };
+		5964A5A22B2EE3260004C53D /* StoreInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoVC.swift; sourceTree = "<group>"; };
+		5964A5A42B2EE3690004C53D /* StoreInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreInfo.storyboard; sourceTree = "<group>"; };
 		598A97F22B1B286F0041EB31 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
 		598A97F42B1B287B0041EB31 /* Logo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logo.storyboard; sourceTree = "<group>"; };
 		598A97F62B1C66DA0041EB31 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
@@ -146,6 +150,15 @@
 			path = Filter;
 			sourceTree = "<group>";
 		};
+		5964A5A12B2EE30D0004C53D /* StoreInfo */ = {
+			isa = PBXGroup;
+			children = (
+				5964A5A22B2EE3260004C53D /* StoreInfoVC.swift */,
+				5964A5A42B2EE3690004C53D /* StoreInfo.storyboard */,
+			);
+			path = StoreInfo;
+			sourceTree = "<group>";
+		};
 		598A97F12B1B285B0041EB31 /* Logo */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +223,7 @@
 				598C118A2B11FC29008B6005 /* MainTabBarController.swift */,
 				598A97F82B1C680B0041EB31 /* CustomRootVC.swift */,
 				598A97F62B1C66DA0041EB31 /* CustomVC.swift */,
+				5964A5A12B2EE30D0004C53D /* StoreInfo */,
 				59E8A62B2B25AD8B005E58A2 /* Profile */,
 				598A98072B22FB240041EB31 /* StoreList */,
 				598A98062B1C92A00041EB31 /* Scan */,
@@ -375,6 +389,7 @@
 				598C11492B0A0C71008B6005 /* AskLocationPremission.storyboard in Resources */,
 				598C11782B11DF7B008B6005 /* PhoneTextFieldView.xib in Resources */,
 				598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */,
+				5964A5A52B2EE36A0004C53D /* StoreInfo.storyboard in Resources */,
 				598A980B2B22FBE20041EB31 /* StoreList.storyboard in Resources */,
 				598A980F2B22FE890041EB31 /* SearchView.xib in Resources */,
 				598C11372B0A0120008B6005 /* LaunchScreen.storyboard in Resources */,
@@ -468,6 +483,7 @@
 				598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */,
 				59E8A62D2B25ADB5005E58A2 /* ProfileVC.swift in Sources */,
 				598A98132B231AA20041EB31 /* WaitStatusView.swift in Sources */,
+				5964A5A32B2EE3260004C53D /* StoreInfoVC.swift in Sources */,
 				598A98112B23134C0041EB31 /* StoreListTableViewCell.swift in Sources */,
 				598C11762B11DEF4008B6005 /* PhoneTextFieldView.swift in Sources */,
 				5964A5942B2D9A1B0004C53D /* TagCollectionViewCell.swift in Sources */,

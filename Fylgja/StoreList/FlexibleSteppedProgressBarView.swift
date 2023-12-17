@@ -31,16 +31,18 @@ class FlexibleSteppedProgressBarView: UIView, NibOwnerLoadable {
     
     private func customInit(){
         loadNibContent()
-        let labelTextAttributes: [NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: 14, weight: .regular), .foregroundColor: UIColor.black]
+        let labelSize:CGFloat = 14
+        let labelTextAttributesForFraction: [NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: labelSize, weight: .regular), .foregroundColor: UIColor.black]
+        let defaultLabelTextAttributes: [NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: labelSize, weight: .regular), .foregroundColor: UIColor.white]
 
         slider.attributedTextForFraction = { [weak self] fraction in
             let string = self?.formatterToString(fraction)
-            return NSAttributedString(string: string ?? "0", attributes: labelTextAttributes)
+            return NSAttributedString(string: string ?? "0", attributes: labelTextAttributesForFraction)
         }
-        slider.setMinimumLabelAttributedText(NSAttributedString(string: "0", attributes: labelTextAttributes))
-        slider.setMaximumLabelAttributedText(NSAttributedString(string: "5", attributes: labelTextAttributes))
+        slider.setMinimumLabelAttributedText(NSAttributedString(string: "0", attributes: defaultLabelTextAttributes))
+        slider.setMaximumLabelAttributedText(NSAttributedString(string: "5", attributes: defaultLabelTextAttributes))
         slider.fraction = 0
-        slider.didBeginTracking = { [weak self] _ in
+        slider.didBeginTracking = { _ in
             
         }
         slider.didEndTracking = { sli in

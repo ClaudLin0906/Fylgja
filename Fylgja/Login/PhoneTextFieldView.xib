@@ -26,22 +26,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話號碼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOk-6c-UvS">
-                    <rect key="frame" x="20" y="64" width="68" height="130"/>
-                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                    <rect key="frame" x="20" y="64" width="60" height="130"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="15"/>
                     <color key="textColor" systemColor="systemGrayColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCs-SC-gwO" userLabel="line">
-                    <rect key="frame" x="108" y="64" width="1" height="130"/>
+                    <rect key="frame" x="100" y="64" width="1" height="130"/>
                     <color key="backgroundColor" name="CommonColor"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="1" id="HrW-VE-t5k"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpH-Vd-AWz">
-                    <rect key="frame" x="129" y="64" width="254" height="130"/>
+                    <rect key="frame" x="121" y="64" width="262" height="130"/>
                     <color key="textColor" name="CommonColor"/>
-                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
