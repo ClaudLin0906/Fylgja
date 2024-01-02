@@ -13,6 +13,7 @@ class StoreInfoVC: CustomVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "商家資訊"
         UIInit()
         // Do any additional setup after loading the view.
     }
@@ -23,7 +24,7 @@ class StoreInfoVC: CustomVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        setDefaultNavigationBackBtn()
     }
 
 }
