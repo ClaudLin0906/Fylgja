@@ -56,6 +56,11 @@ enum TagStatus {
 
 let commonColor = #colorLiteral(red: 0.07058823529, green: 0.3960784314, blue: 0.6431372549, alpha: 1)
 
+class CommonKey {
+    static let shared = CommonKey()
+    let googleMapKey = "AIzaSyCQooOAaz-Lm2IpRZGz26Lx6lTSs9JFvZQ"//Claud
+}
+
 func getSuperController() -> UIViewController? {
     if var topController = keyWindow?.rootViewController {
         while let presentedViewController = topController.presentedViewController {

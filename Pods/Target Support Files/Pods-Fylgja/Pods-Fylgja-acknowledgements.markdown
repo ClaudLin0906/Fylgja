@@ -1,6 +1,14 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## GoogleMaps
+
+Copyright 2023 Google
+
+## GooglePlaces
+
+Copyright 2023 Google
+
 ## fluid-slider
 
 MIT License

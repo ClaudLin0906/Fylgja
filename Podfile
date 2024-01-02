@@ -8,5 +8,7 @@ target 'Fylgja' do
   # Pods for Fylgja
 
  pod 'fluid-slider'
+ pod 'GoogleMaps', '7.4.0'
+ pod 'GooglePlaces'
 
 end

@@ -341,6 +341,7 @@
 				598C11242B0A011F008B6005 /* Frameworks */,
 				598C11252B0A011F008B6005 /* Resources */,
 				DFCB1751E56B59050F605B9C /* [CP] Embed Pods Frameworks */,
+				F7A90444E05191D009FAE55F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -454,6 +455,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fylgja/Pods-Fylgja-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A90444E05191D009FAE55F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fylgja/Pods-Fylgja-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fylgja/Pods-Fylgja-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fylgja/Pods-Fylgja-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

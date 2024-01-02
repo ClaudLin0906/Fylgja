@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
 class StoreInfoVC: CustomVC {
     
@@ -16,6 +18,8 @@ class StoreInfoVC: CustomVC {
     @IBOutlet weak var locationViewConnectView:ConnectInfoView!
     
     @IBOutlet weak var addMemberConnectView:ConnectInfoView!
+    
+    @IBOutlet weak var mapView:GMSMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +42,18 @@ class StoreInfoVC: CustomVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setDefaultNavigationBackBtn()
+    }
+
+}
+
+extension StoreInfoVC: GMSMapViewDelegate {
+    
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        print("Current location: <\(coordinate.latitude), \(coordinate.longitude)>")
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapMyLocation location: CLLocationCoordinate2D) {
+        print("Current location: <\(location.latitude), \(location.longitude)>")
     }
 
 }
