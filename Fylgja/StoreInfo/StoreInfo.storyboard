@@ -138,14 +138,36 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNB-cg-6fc" userLabel="step3">
+                                                <rect key="frame" x="0.0" y="390" width="393" height="300"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="店家自介區塊" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="onf-Ar-Ihl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="onf-Ar-Ihl" firstAttribute="leading" secondItem="nNB-cg-6fc" secondAttribute="leading" id="Hxh-7D-jW4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="onf-Ar-Ihl" secondAttribute="bottom" id="Yu5-MC-XvP"/>
+                                                    <constraint firstAttribute="height" constant="300" id="mv8-IO-1C6"/>
+                                                    <constraint firstItem="onf-Ar-Ihl" firstAttribute="top" secondItem="nNB-cg-6fc" secondAttribute="top" id="uHv-e5-qm9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="onf-Ar-Ihl" secondAttribute="trailing" id="vxa-JP-BGA"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="6rH-76-ZNM" secondAttribute="trailing" id="5cU-eq-S6V"/>
+                                            <constraint firstItem="nNB-cg-6fc" firstAttribute="trailing" secondItem="YZ3-P0-m9C" secondAttribute="trailing" id="TSc-xz-6hS"/>
                                             <constraint firstAttribute="trailing" secondItem="YZ3-P0-m9C" secondAttribute="trailing" id="Tcw-OM-zRm"/>
                                             <constraint firstItem="YZ3-P0-m9C" firstAttribute="top" secondItem="6rH-76-ZNM" secondAttribute="bottom" constant="-10" id="Xse-5f-M94"/>
+                                            <constraint firstItem="nNB-cg-6fc" firstAttribute="leading" secondItem="YZ3-P0-m9C" secondAttribute="leading" id="fKc-47-VSM"/>
                                             <constraint firstItem="6rH-76-ZNM" firstAttribute="top" secondItem="K8E-l5-Y4f" secondAttribute="top" id="pzf-fD-1fO"/>
                                             <constraint firstItem="YZ3-P0-m9C" firstAttribute="leading" secondItem="K8E-l5-Y4f" secondAttribute="leading" id="s4V-5J-OTa"/>
                                             <constraint firstItem="6rH-76-ZNM" firstAttribute="leading" secondItem="K8E-l5-Y4f" secondAttribute="leading" id="vI8-DI-MOT"/>
+                                            <constraint firstItem="nNB-cg-6fc" firstAttribute="top" secondItem="YZ3-P0-m9C" secondAttribute="bottom" id="xGS-Lt-wsX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -206,6 +228,9 @@
         <namedColor name="CommonColor">
             <color red="0.070588235294117646" green="0.396078431372549" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
