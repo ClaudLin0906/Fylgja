@@ -37,6 +37,11 @@ class StoreInfoVC: CustomVC {
         locationViewConnectView.label.text = "查詢位置"
         addMemberConnectView.imageView.image = UIImage(systemName: "person")?.withTintColor(tintColor, renderingMode: .alwaysOriginal)
         addMemberConnectView.label.text = "加入店家會員"
+        mapView.mapType = .normal
+        mapView.delegate = self
+        mapView.settings.compassButton = true
+        mapView.settings.myLocationButton = false
+        mapView.isMyLocationEnabled = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
