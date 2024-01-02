@@ -73,6 +73,14 @@ func toPhoneFormat(_ phoneNumber:String) -> String {
     return result
 }
 
+func pushVC(targetVC:UIViewController, navigation:UINavigationController) {
+    DispatchQueue.main.async {
+        if !(navigation.topViewController?.isKind(of: targetVC.classForCoder))!{
+            navigation.pushViewController(targetVC, animated: true)
+        }
+    }
+}
+
 func validateCellPhone(_ text:String) -> Bool{
     let mobileReg = "^09\\d{8}$"
     let resgextestMobile = NSPredicate(format: "SELF MATCHES %@", mobileReg).evaluate(with: text)

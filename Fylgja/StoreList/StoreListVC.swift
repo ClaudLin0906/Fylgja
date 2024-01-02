@@ -39,6 +39,12 @@ class StoreListVC: CustomRootVC {
 
 extension StoreListVC: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let navigationController = self.navigationController, let VC = UIStoryboard(name: "StoreInfo", bundle: Bundle.main).instantiateViewController(identifier: "StoreInfo") as? StoreInfoVC {
+            pushVC(targetVC: VC, navigation: navigationController)
+        }
+    }
+    
 }
 
 extension StoreListVC: UITableViewDataSource {

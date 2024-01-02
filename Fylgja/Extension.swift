@@ -336,3 +336,23 @@ extension UICollectionView {
         return cellsCopy
     }
 }
+
+extension CACornerMask {
+    
+    static let topLeft:CACornerMask = .layerMinXMinYCorner
+    
+    static let topRight:CACornerMask = .layerMaxXMinYCorner
+    
+    static let bottomLeft:CACornerMask = .layerMinXMaxYCorner
+    
+    static let bottomRight:CACornerMask = .layerMinXMaxYCorner
+    
+    static let all:CACornerMask = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMaxYCorner]
+    
+    static let none:CACornerMask = []
+    
+    static let top:CACornerMask = [.topLeft, .topRight]
+    
+    static let bottom:CACornerMask = [.bottomLeft, .bottomRight]
+    
+}

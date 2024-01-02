@@ -8,22 +8,22 @@
 import UIKit
 
 class StoreInfoVC: CustomVC {
+    
+    @IBOutlet weak var step2View:UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        UIInit()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func UIInit() {
+        step2View.layer.maskedCorners = .top
     }
-    */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
 
 }
