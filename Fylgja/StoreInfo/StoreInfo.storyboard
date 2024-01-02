@@ -43,27 +43,27 @@
                                                 <rect key="frame" x="0.0" y="190" width="393" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店家名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-hk-3G3">
-                                                        <rect key="frame" x="25" y="20" width="72" height="25.333333333333329"/>
+                                                        <rect key="frame" x="15" y="20" width="72" height="30"/>
                                                         <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
                                                         <color key="textColor" name="CommonColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ICp-7Y-hr9">
-                                                        <rect key="frame" x="102" y="24.999999999999982" width="15" height="14.666666666666654"/>
+                                                        <rect key="frame" x="92" y="27.333333333333353" width="15" height="14.666666666666654"/>
                                                         <color key="tintColor" red="0.98823529409999999" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ICp-7Y-hr9" secondAttribute="height" multiplier="1:1" id="LmD-qq-eg0"/>
                                                             <constraint firstAttribute="width" constant="15" id="QdA-Sx-Kw0"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHw-ZT-Qnf">
-                                                        <rect key="frame" x="122.00000000000001" y="25.333333333333314" width="14.666666666666671" height="15"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0(0)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHw-ZT-Qnf">
+                                                        <rect key="frame" x="112" y="27.666666666666686" width="27.333333333333343" height="15"/>
                                                         <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="10"/>
                                                         <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvB-Bx-85G">
-                                                        <rect key="frame" x="278" y="17.666666666666686" width="90" height="30"/>
+                                                        <rect key="frame" x="288" y="20" width="90" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開放候位中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls2-e4-B51">
                                                                 <rect key="frame" x="5" y="5" width="80" height="20"/>
@@ -88,17 +88,47 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAe-x0-ihH" userLabel="address">
+                                                        <rect key="frame" x="15" y="55" width="363" height="24"/>
+                                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uLh-07-gQ0">
+                                                        <rect key="frame" x="15" y="84" width="363" height="20"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yrk-wk-oPh" customClass="ConnectInfoView" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="20"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFi-JR-Rhu" customClass="ConnectInfoView" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="127.66666666666666" y="0.0" width="107.66666666666666" height="20"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pec-Hm-86L" customClass="ConnectInfoView" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="255.33333333333329" y="0.0" width="107.66666666666666" height="20"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="6y7-Hq-Mi5"/>
+                                                        </constraints>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="IvB-Bx-85G" secondAttribute="trailing" constant="25" id="Dw9-pg-Ho1"/>
+                                                    <constraint firstItem="sAe-x0-ihH" firstAttribute="trailing" secondItem="IvB-Bx-85G" secondAttribute="trailing" id="De7-YZ-CdF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IvB-Bx-85G" secondAttribute="trailing" constant="15" id="Dw9-pg-Ho1"/>
+                                                    <constraint firstItem="uLh-07-gQ0" firstAttribute="trailing" secondItem="IvB-Bx-85G" secondAttribute="trailing" id="E7q-u8-BXl"/>
+                                                    <constraint firstItem="uLh-07-gQ0" firstAttribute="leading" secondItem="5PG-hk-3G3" secondAttribute="leading" id="GQI-Sl-uEp"/>
                                                     <constraint firstItem="ICp-7Y-hr9" firstAttribute="centerY" secondItem="5PG-hk-3G3" secondAttribute="centerY" id="Jdq-64-AeN"/>
                                                     <constraint firstItem="IvB-Bx-85G" firstAttribute="centerY" secondItem="sHw-ZT-Qnf" secondAttribute="centerY" id="LN7-bl-Sow"/>
                                                     <constraint firstItem="sHw-ZT-Qnf" firstAttribute="height" secondItem="ICp-7Y-hr9" secondAttribute="height" id="Qcj-mZ-7cR"/>
+                                                    <constraint firstItem="IvB-Bx-85G" firstAttribute="bottom" secondItem="5PG-hk-3G3" secondAttribute="bottom" id="RJ0-kD-qQY"/>
+                                                    <constraint firstItem="uLh-07-gQ0" firstAttribute="top" secondItem="sAe-x0-ihH" secondAttribute="bottom" constant="5" id="W4x-b6-7bH"/>
                                                     <constraint firstItem="sHw-ZT-Qnf" firstAttribute="leading" secondItem="ICp-7Y-hr9" secondAttribute="trailing" constant="5" id="Wtc-0d-2rG"/>
+                                                    <constraint firstItem="sAe-x0-ihH" firstAttribute="leading" secondItem="5PG-hk-3G3" secondAttribute="leading" id="mTn-O7-Een"/>
                                                     <constraint firstItem="sHw-ZT-Qnf" firstAttribute="centerY" secondItem="ICp-7Y-hr9" secondAttribute="centerY" id="q9I-aN-s2d"/>
+                                                    <constraint firstItem="sAe-x0-ihH" firstAttribute="top" secondItem="5PG-hk-3G3" secondAttribute="bottom" constant="5" id="qdF-RM-UW2"/>
                                                     <constraint firstItem="5PG-hk-3G3" firstAttribute="top" secondItem="YZ3-P0-m9C" secondAttribute="top" constant="20" id="u3V-4k-edj"/>
-                                                    <constraint firstItem="5PG-hk-3G3" firstAttribute="leading" secondItem="YZ3-P0-m9C" secondAttribute="leading" constant="25" id="uQD-6i-dXp"/>
+                                                    <constraint firstItem="5PG-hk-3G3" firstAttribute="leading" secondItem="YZ3-P0-m9C" secondAttribute="leading" constant="15" id="uQD-6i-dXp"/>
                                                     <constraint firstAttribute="height" constant="200" id="vHD-hu-Egv"/>
                                                     <constraint firstItem="ICp-7Y-hr9" firstAttribute="leading" secondItem="5PG-hk-3G3" secondAttribute="trailing" constant="5" id="wgP-v1-9DA"/>
                                                 </constraints>
@@ -141,6 +171,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="s6d-Ji-46z"/>
                     <connections>
+                        <outlet property="addMemberConnectView" destination="Pec-Hm-86L" id="UFi-Ew-jTv"/>
+                        <outlet property="locationViewConnectView" destination="CFi-JR-Rhu" id="8cc-On-AXf"/>
+                        <outlet property="phoneNumberConnectView" destination="Yrk-wk-oPh" id="bnS-H9-2rS"/>
                         <outlet property="step2View" destination="YZ3-P0-m9C" id="TYI-uY-m55"/>
                     </connections>
                 </viewController>

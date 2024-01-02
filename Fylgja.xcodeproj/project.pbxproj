@@ -18,6 +18,8 @@
 		5964A59B2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5964A59A2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib */; };
 		5964A5A32B2EE3260004C53D /* StoreInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5A22B2EE3260004C53D /* StoreInfoVC.swift */; };
 		5964A5A52B2EE36A0004C53D /* StoreInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5964A5A42B2EE3690004C53D /* StoreInfo.storyboard */; };
+		5964A5A92B43E0160004C53D /* ConnectInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5A82B43E0160004C53D /* ConnectInfoView.swift */; };
+		5964A5AB2B43E04F0004C53D /* ConnectInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5964A5AA2B43E04F0004C53D /* ConnectInfoView.xib */; };
 		598A97F32B1B286F0041EB31 /* LogoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F22B1B286F0041EB31 /* LogoVC.swift */; };
 		598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 598A97F42B1B287B0041EB31 /* Logo.storyboard */; };
 		598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598A97F62B1C66DA0041EB31 /* CustomVC.swift */; };
@@ -78,6 +80,8 @@
 		5964A59A2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlexibleSteppedProgressBarView.xib; sourceTree = "<group>"; };
 		5964A5A22B2EE3260004C53D /* StoreInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoVC.swift; sourceTree = "<group>"; };
 		5964A5A42B2EE3690004C53D /* StoreInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreInfo.storyboard; sourceTree = "<group>"; };
+		5964A5A82B43E0160004C53D /* ConnectInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectInfoView.swift; sourceTree = "<group>"; };
+		5964A5AA2B43E04F0004C53D /* ConnectInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectInfoView.xib; sourceTree = "<group>"; };
 		598A97F22B1B286F0041EB31 /* LogoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoVC.swift; sourceTree = "<group>"; };
 		598A97F42B1B287B0041EB31 /* Logo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Logo.storyboard; sourceTree = "<group>"; };
 		598A97F62B1C66DA0041EB31 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 			children = (
 				5964A5A22B2EE3260004C53D /* StoreInfoVC.swift */,
 				5964A5A42B2EE3690004C53D /* StoreInfo.storyboard */,
+				5964A5A82B43E0160004C53D /* ConnectInfoView.swift */,
+				5964A5AA2B43E04F0004C53D /* ConnectInfoView.xib */,
 			);
 			path = StoreInfo;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				598A98152B231AAE0041EB31 /* WaitStatusView.xib in Resources */,
 				598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */,
 				598C11322B0A011F008B6005 /* Main.storyboard in Resources */,
+				5964A5AB2B43E04F0004C53D /* ConnectInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +492,7 @@
 				598A98132B231AA20041EB31 /* WaitStatusView.swift in Sources */,
 				5964A5A32B2EE3260004C53D /* StoreInfoVC.swift in Sources */,
 				598A98112B23134C0041EB31 /* StoreListTableViewCell.swift in Sources */,
+				5964A5A92B43E0160004C53D /* ConnectInfoView.swift in Sources */,
 				598C11762B11DEF4008B6005 /* PhoneTextFieldView.swift in Sources */,
 				5964A5942B2D9A1B0004C53D /* TagCollectionViewCell.swift in Sources */,
 				598C114F2B0A0E3F008B6005 /* LocationManager.swift in Sources */,
