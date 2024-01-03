@@ -13,13 +13,13 @@ class StoreInfoVC: CustomVC {
     
     @IBOutlet weak var step2View:UIView!
     
+    @IBOutlet weak var mapView:GMSMapView!
+    
     @IBOutlet weak var phoneNumberConnectView:ConnectInfoView!
     
-    @IBOutlet weak var locationViewConnectView:ConnectInfoView!
+    @IBOutlet weak var addressConnectView:ConnectInfoView!
     
-    @IBOutlet weak var addMemberConnectView:ConnectInfoView!
-    
-    @IBOutlet weak var mapView:GMSMapView!
+    @IBOutlet weak var businessTimeTableView:UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,18 +30,17 @@ class StoreInfoVC: CustomVC {
     
     private func UIInit() {
         step2View.layer.maskedCorners = .top
-        let tintColor = #colorLiteral(red: 0.6039215686, green: 0.6039215686, blue: 0.6039215686, alpha: 1)
-        phoneNumberConnectView.imageView.image = UIImage(systemName: "phone.badge.waveform")?.withTintColor(tintColor)
+        let tintColor = #colorLiteral(red: 0.3098039216, green: 0.3098039216, blue: 0.3098039216, alpha: 1)
+        addressConnectView.imageView.image = UIImage(systemName: "mappin")?.withTintColor(tintColor, renderingMode: .alwaysOriginal)
+        addressConnectView.label.text = "台中市豐原區中山路99巷12弄10號"
+        phoneNumberConnectView.imageView.image = UIImage(systemName: "phone")?.withTintColor(tintColor, renderingMode: .alwaysOriginal)
         phoneNumberConnectView.label.text = "0932266860"
-        locationViewConnectView.imageView.image = UIImage(named: "location-border")?.withTintColor(tintColor, renderingMode: .alwaysOriginal)
-        locationViewConnectView.label.text = "查詢位置"
-        addMemberConnectView.imageView.image = UIImage(systemName: "person")?.withTintColor(tintColor, renderingMode: .alwaysOriginal)
-        addMemberConnectView.label.text = "加入店家會員"
         mapView.mapType = .normal
         mapView.delegate = self
         mapView.settings.compassButton = true
         mapView.settings.myLocationButton = false
         mapView.isMyLocationEnabled = true
+        businessTimeTableView.register(UINib(nibName: "BusinessTimeTableHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "BusinessTimeTableHeaderView")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,4 +60,39 @@ extension StoreInfoVC: GMSMapViewDelegate {
         print("Current location: <\(location.latitude), \(location.longitude)>")
     }
 
+}
+
+extension StoreInfoVC: UITableViewDelegate {
+    
+    
+}
+
+extension StoreInfoVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let businessTimeTableHeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "BusinessTimeTableHeaderView") as! BusinessTimeTableHeaderView
+        businessTimeTableHeaderView.delegate = self
+        return businessTimeTableHeaderView
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: BusinessTimeTableViewCell.identifier, for: indexPath) as! BusinessTimeTableViewCell
+        return cell
+    }
+    
+}
+
+extension StoreInfoVC: BusinessTimeTableHeaderViewDelegate {
+    
+    func pressBusinessTime(_ sender: UIButton, _ isExpand: Bool) {
+        DispatchQueue.main.async {
+            self.businessTimeTableView.reloadSections(IndexSet(integer: 0), with: .automatic)
+        }
+    }
+    
+    
 }
