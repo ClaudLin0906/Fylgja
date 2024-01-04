@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-l5-Y4f" userLabel="content">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1390"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1590"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rH-76-ZNM" userLabel="step1">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
@@ -136,7 +136,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noG-0o-EJI" userLabel="step4">
-                                                <rect key="frame" x="0.0" y="590" width="393" height="800"/>
+                                                <rect key="frame" x="0.0" y="590" width="393" height="1000"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家資訊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctl-HC-maf">
                                                         <rect key="frame" x="15" y="20" width="72" height="25.333333333333329"/>
@@ -180,28 +180,28 @@
                                                         <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-g3-N1T">
-                                                        <rect key="frame" x="15" y="459" width="363" height="200"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="30" estimatedRowHeight="-1" sectionHeaderHeight="40" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-g3-N1T">
+                                                        <rect key="frame" x="15" y="459" width="363" height="250"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="lcr-ej-VBI"/>
+                                                            <constraint firstAttribute="height" constant="250" id="lcr-ej-VBI"/>
                                                         </constraints>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BusinessTimeTableViewCell" id="7PS-aw-ePf" customClass="BusinessTimeTableViewCell" customModule="Fylgja" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="50" width="363" height="44"/>
+                                                                <rect key="frame" x="0.0" y="50" width="363" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7PS-aw-ePf" id="MEl-4P-6kZ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="44"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="30"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="day" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRd-sV-Mvq">
-                                                                            <rect key="frame" x="20" y="12.999999999999998" width="21.333333333333329" height="18.333333333333329"/>
+                                                                            <rect key="frame" x="30" y="6" width="21.333333333333329" height="18.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
                                                                             <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="busonessTime" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTU-vg-VUo">
-                                                                            <rect key="frame" x="256.33333333333331" y="12.999999999999998" width="86.666666666666686" height="18.333333333333329"/>
+                                                                            <rect key="frame" x="256.33333333333331" y="6" width="86.666666666666686" height="18.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
                                                                             <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -210,7 +210,7 @@
                                                                     <constraints>
                                                                         <constraint firstItem="WTU-vg-VUo" firstAttribute="centerY" secondItem="MEl-4P-6kZ" secondAttribute="centerY" id="4qJ-PG-3wK"/>
                                                                         <constraint firstItem="RRd-sV-Mvq" firstAttribute="centerY" secondItem="MEl-4P-6kZ" secondAttribute="centerY" id="7Xb-2h-9bI"/>
-                                                                        <constraint firstItem="RRd-sV-Mvq" firstAttribute="leading" secondItem="MEl-4P-6kZ" secondAttribute="leadingMargin" id="VGj-eC-0CB"/>
+                                                                        <constraint firstItem="RRd-sV-Mvq" firstAttribute="leading" secondItem="MEl-4P-6kZ" secondAttribute="leading" constant="30" id="hv9-oN-sY0"/>
                                                                         <constraint firstAttribute="trailingMargin" secondItem="WTU-vg-VUo" secondAttribute="trailing" id="nDa-cb-EbJ"/>
                                                                     </constraints>
                                                                 </tableViewCellContentView>
@@ -234,7 +234,7 @@
                                                     <constraint firstItem="oiL-8e-G1j" firstAttribute="leading" secondItem="2gr-ti-swW" secondAttribute="leading" id="B4i-wr-YFN"/>
                                                     <constraint firstItem="wpP-Nc-oLU" firstAttribute="top" secondItem="oiL-8e-G1j" secondAttribute="bottom" constant="25" id="CnE-br-z9p"/>
                                                     <constraint firstItem="LEy-2Y-acX" firstAttribute="top" secondItem="wpP-Nc-oLU" secondAttribute="bottom" constant="10" id="E6Q-Bp-If3"/>
-                                                    <constraint firstAttribute="height" constant="800" id="Eja-De-jop"/>
+                                                    <constraint firstAttribute="height" constant="1000" id="Eja-De-jop"/>
                                                     <constraint firstItem="eGa-uE-nGt" firstAttribute="leading" secondItem="LEy-2Y-acX" secondAttribute="leading" id="H00-J7-hl5"/>
                                                     <constraint firstItem="DLL-5U-Ay5" firstAttribute="top" secondItem="ctl-HC-maf" secondAttribute="bottom" constant="15" id="Nee-cT-mLn"/>
                                                     <constraint firstItem="2gr-ti-swW" firstAttribute="leading" secondItem="DLL-5U-Ay5" secondAttribute="leading" id="fNs-Ar-xRm"/>

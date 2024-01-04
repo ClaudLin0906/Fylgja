@@ -20,6 +20,8 @@ class StoreInfoVC: CustomVC {
     @IBOutlet weak var addressConnectView:ConnectInfoView!
     
     @IBOutlet weak var businessTimeTableView:UITableView!
+    
+    private var isExpand = true // cell 的狀態(展開/縮合)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,11 +74,16 @@ extension StoreInfoVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let businessTimeTableHeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "BusinessTimeTableHeaderView") as! BusinessTimeTableHeaderView
         businessTimeTableHeaderView.delegate = self
+//        let tintColor = #colorLiteral(red: 0.4235294118, green: 0.4235294118, blue: 0.4235294118, alpha: 1)
+//        businessTimeTableHeaderView.businessTimeConnectInfoView.imageView.image = UIImage(systemName: "clock.fill")?.withTintColor(tintColor, renderingMode: .alwaysOriginal)
         return businessTimeTableHeaderView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+        if isExpand {
+            return 6
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -90,9 +97,9 @@ extension StoreInfoVC: BusinessTimeTableHeaderViewDelegate {
     
     func pressBusinessTime(_ sender: UIButton, _ isExpand: Bool) {
         DispatchQueue.main.async {
+            self.isExpand = isExpand
             self.businessTimeTableView.reloadSections(IndexSet(integer: 0), with: .automatic)
         }
     }
-    
     
 }

@@ -16,10 +16,10 @@ class BusinessTimeTableHeaderView: UITableViewHeaderFooterView {
     var delegate:BusinessTimeTableHeaderViewDelegate?
     
     var isExpand = false // cell 的狀態(展開/縮合)
-    
-    @IBOutlet weak var businessTimeConnectInfoView:ConnectInfoView!
-    
+        
     @IBAction func btnAction( _ sender:UIButton) {
+        isExpand = !isExpand
+        print(isExpand)
         delegate?.pressBusinessTime(sender, isExpand)
     }
     
