@@ -7,9 +7,13 @@
 
 import UIKit
 
+
+
 class BusinessTimeCurrentDayTableViewCell: UITableViewCell {
     
     static let identifier = "BusinessTimeCurrentDayTableViewCell"
+    
+    @IBOutlet weak var btnExpandBtn:UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
