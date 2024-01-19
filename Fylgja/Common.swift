@@ -10,6 +10,11 @@ import UIKit
 
 var isLogin = false
 
+struct Tag {
+    var title:String
+    var isSelect:Bool
+}
+
 let keyWindow = UIApplication.shared.connectedScenes.map(({$0 as? UIWindowScene})).compactMap(({$0})).first?.windows.first
 
 

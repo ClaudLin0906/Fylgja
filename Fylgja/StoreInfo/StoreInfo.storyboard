@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-l5-Y4f" userLabel="content">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1650"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1450"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rH-76-ZNM" userLabel="step1">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
@@ -39,10 +39,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGf-SQ-Cvu" userLabel="step2">
-                                                <rect key="frame" x="0.0" y="150" width="393" height="1500"/>
+                                                <rect key="frame" x="0.0" y="150" width="393" height="1300"/>
                                                 <subviews>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gdd-sq-3PH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1300"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoreInfoIntroduceTableViewCell" rowHeight="200" id="deg-4e-E5z" customClass="StoreInfoIntroduceTableViewCell" customModule="Fylgja" customModuleProvider="target">
@@ -266,6 +266,31 @@
                                                                     <outlet property="dayOfWeekLabel" destination="OI0-KC-096" id="fIb-ms-TLR"/>
                                                                 </connections>
                                                             </tableViewCell>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TagsTableViewCell" rowHeight="200" id="TZf-Tu-z41" customClass="TagsTableViewCell" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="1050" width="393" height="200"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TZf-Tu-z41" id="YOd-JB-8kg">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0rk-Eq-Z6I" customClass="TagCollectionView" customModule="Fylgja" customModuleProvider="target">
+                                                                            <rect key="frame" x="20" y="11" width="353" height="178"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="250" id="vTh-au-g0R"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="0rk-Eq-Z6I" firstAttribute="leading" secondItem="YOd-JB-8kg" secondAttribute="leadingMargin" id="7Hq-tq-u9C"/>
+                                                                        <constraint firstItem="0rk-Eq-Z6I" firstAttribute="top" secondItem="YOd-JB-8kg" secondAttribute="topMargin" id="9UJ-Fx-e0I"/>
+                                                                        <constraint firstAttribute="bottomMargin" secondItem="0rk-Eq-Z6I" secondAttribute="bottom" id="OWb-co-u6B"/>
+                                                                        <constraint firstAttribute="trailingMargin" secondItem="0rk-Eq-Z6I" secondAttribute="trailing" id="tdd-Bx-WhM"/>
+                                                                    </constraints>
+                                                                </tableViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="tagCollectionView" destination="0rk-Eq-Z6I" id="Z3p-6z-4oB"/>
+                                                                </connections>
+                                                            </tableViewCell>
                                                         </prototypes>
                                                         <connections>
                                                             <outlet property="dataSource" destination="Y6W-OH-hqX" id="l61-he-yVN"/>
@@ -275,7 +300,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1500" id="0Wc-uJ-ftq"/>
+                                                    <constraint firstAttribute="height" constant="1300" id="0Wc-uJ-ftq"/>
                                                     <constraint firstItem="gdd-sq-3PH" firstAttribute="top" secondItem="jGf-SQ-Cvu" secondAttribute="top" id="Orp-ZN-0aZ"/>
                                                     <constraint firstAttribute="bottom" secondItem="gdd-sq-3PH" secondAttribute="bottom" id="P9L-FY-yw4"/>
                                                     <constraint firstItem="gdd-sq-3PH" firstAttribute="leading" secondItem="jGf-SQ-Cvu" secondAttribute="leading" id="ifr-Ca-2uX"/>
@@ -319,7 +344,7 @@
                     <navigationItem key="navigationItem" id="s6d-Ji-46z"/>
                     <connections>
                         <outlet property="storeInfoTableView" destination="gdd-sq-3PH" id="Yyu-OW-ww8"/>
-                        <outlet property="storeInfoTableViewContentHeight" destination="0Wc-uJ-ftq" id="Qbf-Hw-dx7"/>
+                        <outlet property="storeInfoTableViewContentHeight" destination="0Wc-uJ-ftq" id="zzV-pY-4vs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

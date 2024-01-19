@@ -28,7 +28,20 @@ class StoreInfoVC: CustomVC {
     
     private var noExpand:CGFloat = 1300
     
-    private var expand:CGFloat = 1600
+    private var expand:CGFloat = 1500
+    
+    private var tags:[Tag] =
+    [
+        Tag(title: "蔬食", isSelect: false),
+        Tag(title: "火鍋", isSelect: true),
+        Tag(title: "炸物", isSelect: false),
+        Tag(title: "茶飲", isSelect: false),
+        Tag(title: "輕食", isSelect: true),
+        Tag(title: "甜點", isSelect: true),
+        Tag(title: "小吃", isSelect: false),
+        Tag(title: "排餐", isSelect: false),
+        Tag(title: "異國料理", isSelect: false),
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -146,6 +159,10 @@ extension StoreInfoVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case (4, _):
             let cell = tableView.dequeueReusableCell(withIdentifier: BusinessTimeTableViewCell.identifier, for: indexPath) as! BusinessTimeTableViewCell
+            return cell
+        case (5, _):
+            let cell = tableView.dequeueReusableCell(withIdentifier: TagsTableViewCell.identifier, for: indexPath) as! TagsTableViewCell
+            cell.tagCollectionView.setTags(tags)
             return cell
         default:
             return UITableViewCell()

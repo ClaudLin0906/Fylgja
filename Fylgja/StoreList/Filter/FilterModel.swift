@@ -7,7 +7,4 @@
 
 import Foundation
 
-struct Tag {
-    var title:String
-    var isSelect:Bool
-}
+
