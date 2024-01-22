@@ -26,9 +26,16 @@ class StoreInfoVC: CustomVC {
         }
     }
     
-    private var noExpand:CGFloat = 1300
+    private lazy var noExpand:CGFloat = storeInfoTableViewContentHeight.constant
+    {
+        willSet {
+            expand = newValue + distance
+        }
+    }
     
-    private var expand:CGFloat = 1500
+    private lazy var expand:CGFloat = storeInfoTableViewContentHeight.constant + distance
+    
+    private var distance:CGFloat = 200
     
     private var tags:[Tag] =
     [
@@ -51,12 +58,11 @@ class StoreInfoVC: CustomVC {
     }
     
     private func UIInit() {
+
         storeInfoTableView.register(UINib(nibName: "StoreInfoTableViewProfileHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "StoreInfoTableViewProfileHeaderView")
         storeInfoTableView.register(UINib(nibName: "StoreInfoTableViewHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "StoreInfoTableViewHeaderView")
         storeInfoTableView.register(UINib(nibName: "StoreInfoTableViewFooterView", bundle: nil), forHeaderFooterViewReuseIdentifier: "StoreInfoTableViewFooterView")
         storeInfoTableView.register(UINib(nibName: "StoreInfoHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "StoreInfoHeaderView")
-
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
