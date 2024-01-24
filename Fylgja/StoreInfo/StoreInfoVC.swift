@@ -26,14 +26,18 @@ class StoreInfoVC: CustomVC {
         }
     }
     
-    private lazy var noExpand:CGFloat = storeInfoTableViewContentHeight.constant
-    {
-        willSet {
-            expand = newValue + distance
-        }
-    }
+//    private lazy var noExpand:CGFloat = storeInfoTableViewContentHeight.constant
+//    {
+//        willSet {
+//            expand = newValue + distance
+//        }
+//    }
     
-    private lazy var expand:CGFloat = storeInfoTableViewContentHeight.constant + distance
+//    private lazy var expand:CGFloat = storeInfoTableViewContentHeight.constant + distance
+    
+    private lazy var noExpand:CGFloat = 1500
+    
+    private var expand:CGFloat = 1700
     
     private var distance:CGFloat = 200
     
@@ -58,7 +62,6 @@ class StoreInfoVC: CustomVC {
     }
     
     private func UIInit() {
-
         storeInfoTableView.register(UINib(nibName: "StoreInfoTableViewProfileHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "StoreInfoTableViewProfileHeaderView")
         storeInfoTableView.register(UINib(nibName: "StoreInfoTableViewHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "StoreInfoTableViewHeaderView")
         storeInfoTableView.register(UINib(nibName: "StoreInfoTableViewFooterView", bundle: nil), forHeaderFooterViewReuseIdentifier: "StoreInfoTableViewFooterView")
@@ -68,6 +71,15 @@ class StoreInfoVC: CustomVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setDefaultNavigationBackBtn()
+    }
+    
+    @objc private func addWait(_ sender:UIButton) {
+        if let addWaitListVC = UIStoryboard(name: "AddWaitList", bundle: nil).instantiateViewController(withIdentifier: "AddWaitList") as? AddWaitListVC {
+            let customDetent = UISheetPresentationController.Detent.custom { context in
+                return 550
+            }
+            showSheetVC(self, addWaitListVC, [customDetent, .large()])
+        }
     }
     
 }
@@ -117,6 +129,7 @@ extension StoreInfoVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         guard section == 7 else { return nil }
         let storeInfoTableViewFooterView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "StoreInfoTableViewFooterView") as! StoreInfoTableViewFooterView
+        storeInfoTableViewFooterView.btn.addTarget( self, action: #selector(addWait(_:)), for: .touchUpInside)
         return storeInfoTableViewFooterView
     }
     

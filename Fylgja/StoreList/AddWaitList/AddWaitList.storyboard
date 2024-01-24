@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Wait ListVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddWaitList" id="Y6W-OH-hqX" customClass="AddWaitListVC" customModule="Fylgja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tCG-Wd-wtB">
+                                <rect key="frame" x="20" y="79" width="353" height="451"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jMG-O3-GYw">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用餐人數" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeX-kF-nxs">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="mwf-7J-CVs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdF-Ft-M4Z">
+                                                <rect key="frame" x="0.0" y="50" width="353" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Kxf-UX-rFO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEe-lY-Pfy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="4GR-03-JkP"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMU-98-Hgb" customClass="CalculateView" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="45.000000000000007" y="0.0" width="121.66666666666669" height="30"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LN8-9Y-nMA">
+                                                        <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小孩" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srN-X2-dr5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="JoB-uQ-KSx"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LG-EI-JBH" customClass="CalculateView" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="44.999999999999993" y="0.0" width="121.33333333333331" height="30"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Kxf-UX-rFO" firstAttribute="centerY" secondItem="AdF-Ft-M4Z" secondAttribute="centerY" id="DQV-ts-bV7"/>
+                                                    <constraint firstItem="LN8-9Y-nMA" firstAttribute="leading" secondItem="AdF-Ft-M4Z" secondAttribute="centerX" constant="10" id="Ht8-Gi-Et4"/>
+                                                    <constraint firstAttribute="centerX" secondItem="Kxf-UX-rFO" secondAttribute="trailing" constant="10" id="JUE-Mz-oQw"/>
+                                                    <constraint firstItem="LN8-9Y-nMA" firstAttribute="centerY" secondItem="Kxf-UX-rFO" secondAttribute="centerY" id="Jku-Pp-Azw"/>
+                                                    <constraint firstItem="LN8-9Y-nMA" firstAttribute="height" secondItem="Kxf-UX-rFO" secondAttribute="height" id="N7C-hP-jxP"/>
+                                                    <constraint firstItem="LN8-9Y-nMA" firstAttribute="width" secondItem="Kxf-UX-rFO" secondAttribute="width" id="Un6-Oa-RWc"/>
+                                                    <constraint firstItem="Kxf-UX-rFO" firstAttribute="leading" secondItem="AdF-Ft-M4Z" secondAttribute="leading" id="hjF-Wu-5jq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Kxf-UX-rFO" secondAttribute="bottom" id="pXr-9Q-XhO"/>
+                                                    <constraint firstItem="Kxf-UX-rFO" firstAttribute="top" secondItem="AdF-Ft-M4Z" secondAttribute="top" id="uOR-Dx-K7G"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="cdU-NR-McP"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8pp-h5-U9u">
+                                        <rect key="frame" x="0.0" y="100" width="353" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="候位人姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yU6-J8-4oy">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入候位人姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Lx-zU-Ff0" customClass="CustomTextField" customModule="Fylgja" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="20" width="353" height="34"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sfh-Bb-yjd">
+                                                <rect key="frame" x="0.0" y="74" width="353" height="26"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anv-WW-Emb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="26"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDs-US-lN6" customClass="RadioButton" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="5.6666666666666856" width="15" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="76w-9z-rDG"/>
+                                                                    <constraint firstAttribute="width" secondItem="iDs-US-lN6" secondAttribute="height" multiplier="1:1" id="T8f-bg-GUq"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="CommonColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                                        <color key="value" name="CommonColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="先生" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJu-5H-vKh">
+                                                                <rect key="frame" x="20" y="1" width="34" height="24"/>
+                                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="xJu-5H-vKh" firstAttribute="leading" secondItem="iDs-US-lN6" secondAttribute="trailing" constant="5" id="6J2-01-ZIO"/>
+                                                            <constraint firstItem="iDs-US-lN6" firstAttribute="centerY" secondItem="anv-WW-Emb" secondAttribute="centerY" id="FaN-vp-tdR"/>
+                                                            <constraint firstItem="iDs-US-lN6" firstAttribute="leading" secondItem="anv-WW-Emb" secondAttribute="leading" id="T01-GB-MkE"/>
+                                                            <constraint firstItem="xJu-5H-vKh" firstAttribute="centerY" secondItem="iDs-US-lN6" secondAttribute="centerY" id="hss-wb-H5B"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEn-VK-HLA">
+                                                        <rect key="frame" x="124.33333333333334" y="0.0" width="104.33333333333334" height="26"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4t-1J-BB2" customClass="RadioButton" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="5.6666666666666856" width="15" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="d4t-1J-BB2" secondAttribute="height" multiplier="1:1" id="HYV-6x-8T8"/>
+                                                                    <constraint firstAttribute="width" constant="15" id="iFK-h0-yiV"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="CommonColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                                        <color key="value" name="CommonColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小姐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-2H-rIE">
+                                                                <rect key="frame" x="20" y="1" width="34" height="24"/>
+                                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="uDu-2H-rIE" firstAttribute="centerY" secondItem="d4t-1J-BB2" secondAttribute="centerY" id="4ht-QE-hJE"/>
+                                                            <constraint firstItem="d4t-1J-BB2" firstAttribute="leading" secondItem="IEn-VK-HLA" secondAttribute="leading" id="7rh-CI-EmE"/>
+                                                            <constraint firstItem="uDu-2H-rIE" firstAttribute="leading" secondItem="d4t-1J-BB2" secondAttribute="trailing" constant="5" id="Hyi-mt-va5"/>
+                                                            <constraint firstItem="d4t-1J-BB2" firstAttribute="centerY" secondItem="IEn-VK-HLA" secondAttribute="centerY" id="QN3-E6-nb9"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weM-te-3RG">
+                                                        <rect key="frame" x="248.66666666666671" y="0.0" width="104.33333333333334" height="26"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECR-Wm-7wR" customClass="RadioButton" customModule="Fylgja" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="5.6666666666666856" width="15" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="ECR-Wm-7wR" secondAttribute="height" multiplier="1:1" id="lgm-jn-c7Y"/>
+                                                                    <constraint firstAttribute="width" constant="15" id="uC1-Ki-xuz"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="CommonColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedButtonColor">
+                                                                        <color key="value" name="CommonColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqd-sO-A8a">
+                                                                <rect key="frame" x="20" y="1" width="34" height="24"/>
+                                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Xqd-sO-A8a" firstAttribute="leading" secondItem="ECR-Wm-7wR" secondAttribute="trailing" constant="5" id="UpL-Zz-AwV"/>
+                                                            <constraint firstItem="ECR-Wm-7wR" firstAttribute="centerY" secondItem="weM-te-3RG" secondAttribute="centerY" id="d5x-Tx-AMN"/>
+                                                            <constraint firstItem="ECR-Wm-7wR" firstAttribute="leading" secondItem="weM-te-3RG" secondAttribute="leading" id="iSC-GJ-kBg"/>
+                                                            <constraint firstItem="Xqd-sO-A8a" firstAttribute="centerY" secondItem="ECR-Wm-7wR" secondAttribute="centerY" id="nWR-97-Ddt"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="ys3-5X-6Rg"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rjh-t0-L0M">
+                                        <rect key="frame" x="0.0" y="220" width="353" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="候位人聯絡電話" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSl-Uy-SwF">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="24"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入候位人手機號碼" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRp-VE-XWq" customClass="CustomTextField" customModule="Fylgja" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44" width="353" height="36"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7FC-3l-8H7">
+                                        <rect key="frame" x="0.0" y="320" width="353" height="76"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="備註" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPJ-Tb-D96">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="22"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="例：我需要2張兒童座椅" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phf-xP-0PU" customClass="CustomTextField" customModule="Fylgja" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="42" width="353" height="34"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hx0-wa-JqB">
+                                        <rect key="frame" x="0.0" y="416" width="353" height="35"/>
+                                        <color key="backgroundColor" name="CommonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Qfy-FW-sZy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="線上候位">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rjh-t0-L0M" firstAttribute="height" secondItem="jMG-O3-GYw" secondAttribute="height" id="anM-pn-b5O"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tCG-Wd-wtB" secondAttribute="trailing" constant="20" id="6BX-MX-5m2"/>
+                            <constraint firstItem="tCG-Wd-wtB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="V8Y-7j-3Ak"/>
+                            <constraint firstItem="tCG-Wd-wtB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xHG-Xy-0D6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="femaleRadioBtn" destination="d4t-1J-BB2" id="a1r-Jr-neW"/>
+                        <outlet property="maleRadioBtn" destination="iDs-US-lN6" id="1RO-Oi-65K"/>
+                        <outlet property="otherRadioBtn" destination="ECR-Wm-7wR" id="QpQ-rP-8h1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="CommonColor">
+            <color red="0.070588235294117646" green="0.396078431372549" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

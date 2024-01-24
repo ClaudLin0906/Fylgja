@@ -103,4 +103,13 @@ func removeWhitespace(_ string: String) -> String {
     return filteredString
 }
 
-
+func showSheetVC(_ presentVC:UIViewController , _ sheetVC:UIViewController, _ detents:[UISheetPresentationController.Detent]) {
+    if let sheet = sheetVC.sheetPresentationController {
+        sheet.detents = detents
+        sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+        sheet.prefersGrabberVisible = true
+        sheet.largestUndimmedDetentIdentifier = .medium
+    }
+    presentVC.present(sheetVC, animated: true, completion: nil)
+    
+}

@@ -10,6 +10,11 @@
 		5929D2032B5A646700F6C79D /* TagCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929D2022B5A646700F6C79D /* TagCollectionView.swift */; };
 		5929D2052B5A648700F6C79D /* TagCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5929D2042B5A648700F6C79D /* TagCollectionView.xib */; };
 		5929D2072B5A6C2B00F6C79D /* TagsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929D2062B5A6C2B00F6C79D /* TagsTableViewCell.swift */; };
+		5929D20A2B5E566A00F6C79D /* AddWaitListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929D2092B5E566A00F6C79D /* AddWaitListVC.swift */; };
+		5929D20C2B5E568100F6C79D /* AddWaitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5929D20B2B5E568100F6C79D /* AddWaitList.storyboard */; };
+		5929D20E2B5E5B1900F6C79D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929D20D2B5E5B1900F6C79D /* CustomTextField.swift */; };
+		592C8BB12B60F4DB002F1ADC /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C8BB02B60F4DB002F1ADC /* RadioButton.swift */; };
+		592C8BB32B60F55B002F1ADC /* RadioButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C8BB22B60F55B002F1ADC /* RadioButtonController.swift */; };
 		5964A58A2B2D7D420004C53D /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5892B2D7D420004C53D /* FilterVC.swift */; };
 		5964A58C2B2D84FF0004C53D /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5964A58B2B2D84FF0004C53D /* Filter.storyboard */; };
 		5964A58F2B2D90E00004C53D /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A58E2B2D90E00004C53D /* CalculateView.swift */; };
@@ -87,6 +92,11 @@
 		5929D2022B5A646700F6C79D /* TagCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionView.swift; sourceTree = "<group>"; };
 		5929D2042B5A648700F6C79D /* TagCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionView.xib; sourceTree = "<group>"; };
 		5929D2062B5A6C2B00F6C79D /* TagsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsTableViewCell.swift; sourceTree = "<group>"; };
+		5929D2092B5E566A00F6C79D /* AddWaitListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWaitListVC.swift; sourceTree = "<group>"; };
+		5929D20B2B5E568100F6C79D /* AddWaitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddWaitList.storyboard; sourceTree = "<group>"; };
+		5929D20D2B5E5B1900F6C79D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		592C8BB02B60F4DB002F1ADC /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		592C8BB22B60F55B002F1ADC /* RadioButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonController.swift; sourceTree = "<group>"; };
 		5964A5892B2D7D420004C53D /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
 		5964A58B2B2D84FF0004C53D /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
 		5964A58E2B2D90E00004C53D /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
@@ -172,6 +182,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5929D2082B5E563900F6C79D /* AddWaitList */ = {
+			isa = PBXGroup;
+			children = (
+				5929D2092B5E566A00F6C79D /* AddWaitListVC.swift */,
+				5929D20B2B5E568100F6C79D /* AddWaitList.storyboard */,
+			);
+			path = AddWaitList;
+			sourceTree = "<group>";
+		};
 		5964A58D2B2D86C10004C53D /* Filter */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +249,7 @@
 				598A98102B23134C0041EB31 /* StoreListTableViewCell.swift */,
 				598A980C2B22FE560041EB31 /* SearchView.swift */,
 				598A980E2B22FE890041EB31 /* SearchView.xib */,
+				5929D2082B5E563900F6C79D /* AddWaitList */,
 				5964A58D2B2D86C10004C53D /* Filter */,
 				5964A5982B2DAE5A0004C53D /* FlexibleSteppedProgressBarView.swift */,
 				5964A59A2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib */,
@@ -303,6 +323,9 @@
 				5929D2042B5A648700F6C79D /* TagCollectionView.xib */,
 				5964A5922B2D9A1B0004C53D /* TagCollectionViewCell.swift */,
 				5964A5932B2D9A1B0004C53D /* TagCollectionViewCell.xib */,
+				5929D20D2B5E5B1900F6C79D /* CustomTextField.swift */,
+				592C8BB02B60F4DB002F1ADC /* RadioButton.swift */,
+				592C8BB22B60F55B002F1ADC /* RadioButtonController.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -445,6 +468,7 @@
 				598A97F52B1B287B0041EB31 /* Logo.storyboard in Resources */,
 				5964A5A52B2EE36A0004C53D /* StoreInfo.storyboard in Resources */,
 				598A980B2B22FBE20041EB31 /* StoreList.storyboard in Resources */,
+				5929D20C2B5E568100F6C79D /* AddWaitList.storyboard in Resources */,
 				598A980F2B22FE890041EB31 /* SearchView.xib in Resources */,
 				598C11372B0A0120008B6005 /* LaunchScreen.storyboard in Resources */,
 				598C11872B11FB3C008B6005 /* WaitingList.storyboard in Resources */,
@@ -563,16 +587,20 @@
 				598A97F72B1C66DA0041EB31 /* CustomVC.swift in Sources */,
 				59E8A62D2B25ADB5005E58A2 /* ProfileVC.swift in Sources */,
 				598A98132B231AA20041EB31 /* WaitStatusView.swift in Sources */,
+				5929D20E2B5E5B1900F6C79D /* CustomTextField.swift in Sources */,
 				5964A5A32B2EE3260004C53D /* StoreInfoVC.swift in Sources */,
 				598A98112B23134C0041EB31 /* StoreListTableViewCell.swift in Sources */,
 				598D351C2B46AAA200B4B7CF /* StoreInfoMapTableViewCell.swift in Sources */,
 				598C11762B11DEF4008B6005 /* PhoneTextFieldView.swift in Sources */,
 				5964A5D12B451AD50004C53D /* BusinessTimeTableViewCell.swift in Sources */,
+				592C8BB12B60F4DB002F1ADC /* RadioButton.swift in Sources */,
 				598D35222B46AF7600B4B7CF /* StoreInfoHeaderView.swift in Sources */,
 				5964A5942B2D9A1B0004C53D /* TagCollectionViewCell.swift in Sources */,
 				598D350E2B468FEC00B4B7CF /* StoreInfoProfileTableViewCell.swift in Sources */,
+				5929D20A2B5E566A00F6C79D /* AddWaitListVC.swift in Sources */,
 				598D35182B46A83100B4B7CF /* StoreInfoTableViewProfileHeaderView.swift in Sources */,
 				598D351E2B46AD4400B4B7CF /* StoreInfoTableViewFooterView.swift in Sources */,
+				592C8BB32B60F55B002F1ADC /* RadioButtonController.swift in Sources */,
 				598C114F2B0A0E3F008B6005 /* LocationManager.swift in Sources */,
 				598A97F92B1C680C0041EB31 /* CustomRootVC.swift in Sources */,
 			);
@@ -650,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -704,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -732,7 +760,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -767,7 +795,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

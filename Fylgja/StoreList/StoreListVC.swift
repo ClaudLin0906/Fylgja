@@ -25,13 +25,7 @@ class StoreListVC: CustomRootVC {
     
     @objc private func filterBtn(_ sender:UIButton) {
         if let filterVC = UIStoryboard(name: "Filter", bundle: nil).instantiateViewController(withIdentifier: "Filter") as? FilterVC {
-            if let sheet = filterVC.sheetPresentationController {
-                sheet.detents = [.medium(), .large()]
-                sheet.prefersScrollingExpandsWhenScrolledToEdge = false
-                sheet.prefersGrabberVisible = true
-                sheet.largestUndimmedDetentIdentifier = .medium
-            }
-            present(filterVC, animated: true, completion: nil)
+            showSheetVC(self, filterVC, [.medium(), .large()])
         }
     }
 
