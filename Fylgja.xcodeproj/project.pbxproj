@@ -15,6 +15,8 @@
 		5929D20E2B5E5B1900F6C79D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929D20D2B5E5B1900F6C79D /* CustomTextField.swift */; };
 		592C8BB12B60F4DB002F1ADC /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C8BB02B60F4DB002F1ADC /* RadioButton.swift */; };
 		592C8BB32B60F55B002F1ADC /* RadioButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C8BB22B60F55B002F1ADC /* RadioButtonController.swift */; };
+		592C8BB52B6109A2002F1ADC /* AddSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C8BB42B6109A2002F1ADC /* AddSuccessVC.swift */; };
+		592C8BB72B6109C4002F1ADC /* AddSuccess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592C8BB62B6109C4002F1ADC /* AddSuccess.storyboard */; };
 		5964A58A2B2D7D420004C53D /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A5892B2D7D420004C53D /* FilterVC.swift */; };
 		5964A58C2B2D84FF0004C53D /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5964A58B2B2D84FF0004C53D /* Filter.storyboard */; };
 		5964A58F2B2D90E00004C53D /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5964A58E2B2D90E00004C53D /* CalculateView.swift */; };
@@ -97,6 +99,8 @@
 		5929D20D2B5E5B1900F6C79D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		592C8BB02B60F4DB002F1ADC /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		592C8BB22B60F55B002F1ADC /* RadioButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonController.swift; sourceTree = "<group>"; };
+		592C8BB42B6109A2002F1ADC /* AddSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSuccessVC.swift; sourceTree = "<group>"; };
+		592C8BB62B6109C4002F1ADC /* AddSuccess.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSuccess.storyboard; sourceTree = "<group>"; };
 		5964A5892B2D7D420004C53D /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
 		5964A58B2B2D84FF0004C53D /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
 		5964A58E2B2D90E00004C53D /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 				598D351B2B46AAA200B4B7CF /* StoreInfoMapTableViewCell.swift */,
 				5964A5D02B451AD50004C53D /* BusinessTimeTableViewCell.swift */,
 				5929D2062B5A6C2B00F6C79D /* TagsTableViewCell.swift */,
+				592C8BB42B6109A2002F1ADC /* AddSuccessVC.swift */,
+				592C8BB62B6109C4002F1ADC /* AddSuccess.storyboard */,
 			);
 			path = StoreInfo;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 				598D35242B46AF8200B4B7CF /* StoreInfoHeaderView.xib in Resources */,
 				5964A5912B2D91020004C53D /* CalculateView.xib in Resources */,
 				59E8A62F2B25ADCB005E58A2 /* Profile.storyboard in Resources */,
+				592C8BB72B6109C4002F1ADC /* AddSuccess.storyboard in Resources */,
 				598A98052B1C88770041EB31 /* ScanBtn.xib in Resources */,
 				5964A5952B2D9A1B0004C53D /* TagCollectionViewCell.xib in Resources */,
 				598C11742B11D334008B6005 /* Login.storyboard in Resources */,
@@ -566,6 +573,7 @@
 				598C11412B0A021B008B6005 /* MainRootVC.swift in Sources */,
 				598D35162B46A80300B4B7CF /* StoreInfoTableViewHeaderView.swift in Sources */,
 				598A98172B23EFA70041EB31 /* TagView.swift in Sources */,
+				592C8BB52B6109A2002F1ADC /* AddSuccessVC.swift in Sources */,
 				598C112F2B0A011F008B6005 /* ViewController.swift in Sources */,
 				598C11472B0A0C61008B6005 /* AskLocationPremissionVC.swift in Sources */,
 				598C11722B11D326008B6005 /* LoginVC.swift in Sources */,

@@ -17,6 +17,8 @@ class AddWaitListVC: UIViewController {
     
     private lazy var radioButtonController = RadioButtonController(buttons: [maleRadioBtn, femaleRadioBtn, otherRadioBtn])
 
+    var handle:(() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UIInit()
@@ -25,6 +27,17 @@ class AddWaitListVC: UIViewController {
     
     private func UIInit() {
         radioButtonController.delegate = self
+    }
+    
+    @IBAction func btnHandle(_ sender:UIButton) {
+        
+        DispatchQueue.main.async {
+            self.dismiss(animated: true)
+        }
+        
+        if let handle = handle {
+            handle()
+        }
     }
 
 }

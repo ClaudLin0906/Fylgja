@@ -260,6 +260,9 @@
                                                 <integer key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnHandle:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="m9I-Dq-IZs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
