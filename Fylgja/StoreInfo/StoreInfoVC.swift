@@ -79,12 +79,8 @@ class StoreInfoVC: CustomVC {
                 return 550
             }
             addWaitListVC.handle = {
-                if let addSuccessVC = UIStoryboard(name: "AddSuccess", bundle: nil).instantiateViewController(withIdentifier: "AddSuccess") as? AddSuccessVC {
-                    DispatchQueue.main.async {
-                        addSuccessVC.modalPresentationStyle = .fullScreen
-                        self.present(addSuccessVC, animated: true)
-                    }
-                }
+                let addSuccessView = AddSuccess(frame: UIScreen.main.bounds)
+                keyWindow?.addSubview(addSuccessView)
             }
             showSheetVC(self, addWaitListVC, [customDetent, .large()])
         }
