@@ -36,7 +36,5 @@ class AddSuccess: UIView, NibOwnerLoadable {
     private func remove() {
         removeFromSuperview()
     }
-    
-    
 
 }
