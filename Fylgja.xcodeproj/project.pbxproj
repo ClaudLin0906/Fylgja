@@ -13,6 +13,11 @@
 		590250CE2B68B2130002E76C /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 590250CD2B68B2130002E76C /* ProfileHeaderView.xib */; };
 		590250D02B68B67F0002E76C /* ProfileTableViewSwtichCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590250CF2B68B67F0002E76C /* ProfileTableViewSwtichCell.swift */; };
 		590250D22B68B68F0002E76C /* ProfileTableViewLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590250D12B68B68F0002E76C /* ProfileTableViewLabelCell.swift */; };
+		590250D52B68BB6F0002E76C /* ProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590250D42B68BB6F0002E76C /* ProfileDetailVC.swift */; };
+		590250D72B68BBB30002E76C /* ProfileDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590250D62B68BBB30002E76C /* ProfileDetail.storyboard */; };
+		590250D92B68C25C0002E76C /* ProfileDetailDefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590250D82B68C25C0002E76C /* ProfileDetailDefaultTableViewCell.swift */; };
+		590250DB2B68C2A50002E76C /* ProfileDetailVerifyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590250DA2B68C2A50002E76C /* ProfileDetailVerifyTableViewCell.swift */; };
+		590250DD2B68C5310002E76C /* ProfileDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590250DC2B68C5310002E76C /* ProfileDetailModel.swift */; };
 		5929D2032B5A646700F6C79D /* TagCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929D2022B5A646700F6C79D /* TagCollectionView.swift */; };
 		5929D2052B5A648700F6C79D /* TagCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5929D2042B5A648700F6C79D /* TagCollectionView.xib */; };
 		5929D2072B5A6C2B00F6C79D /* TagsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929D2062B5A6C2B00F6C79D /* TagsTableViewCell.swift */; };
@@ -105,6 +110,11 @@
 		590250CD2B68B2130002E76C /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
 		590250CF2B68B67F0002E76C /* ProfileTableViewSwtichCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewSwtichCell.swift; sourceTree = "<group>"; };
 		590250D12B68B68F0002E76C /* ProfileTableViewLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewLabelCell.swift; sourceTree = "<group>"; };
+		590250D42B68BB6F0002E76C /* ProfileDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailVC.swift; sourceTree = "<group>"; };
+		590250D62B68BBB30002E76C /* ProfileDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileDetail.storyboard; sourceTree = "<group>"; };
+		590250D82B68C25C0002E76C /* ProfileDetailDefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailDefaultTableViewCell.swift; sourceTree = "<group>"; };
+		590250DA2B68C2A50002E76C /* ProfileDetailVerifyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailVerifyTableViewCell.swift; sourceTree = "<group>"; };
+		590250DC2B68C5310002E76C /* ProfileDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailModel.swift; sourceTree = "<group>"; };
 		5929D2022B5A646700F6C79D /* TagCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionView.swift; sourceTree = "<group>"; };
 		5929D2042B5A648700F6C79D /* TagCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionView.xib; sourceTree = "<group>"; };
 		5929D2062B5A6C2B00F6C79D /* TagsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsTableViewCell.swift; sourceTree = "<group>"; };
@@ -202,6 +212,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590250D32B68BB5A0002E76C /* ProfileDetail */ = {
+			isa = PBXGroup;
+			children = (
+				590250D42B68BB6F0002E76C /* ProfileDetailVC.swift */,
+				590250D62B68BBB30002E76C /* ProfileDetail.storyboard */,
+				590250DC2B68C5310002E76C /* ProfileDetailModel.swift */,
+				590250D82B68C25C0002E76C /* ProfileDetailDefaultTableViewCell.swift */,
+				590250DA2B68C2A50002E76C /* ProfileDetailVerifyTableViewCell.swift */,
+			);
+			path = ProfileDetail;
+			sourceTree = "<group>";
+		};
 		5929D2082B5E563900F6C79D /* AddWaitList */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,8 +334,9 @@
 				598C118A2B11FC29008B6005 /* MainTabBarController.swift */,
 				598A97F82B1C680B0041EB31 /* CustomRootVC.swift */,
 				598A97F62B1C66DA0041EB31 /* CustomVC.swift */,
-				5964A5A12B2EE30D0004C53D /* StoreInfo */,
 				59E8A62B2B25AD8B005E58A2 /* Profile */,
+				590250D32B68BB5A0002E76C /* ProfileDetail */,
+				5964A5A12B2EE30D0004C53D /* StoreInfo */,
 				598A98072B22FB240041EB31 /* StoreList */,
 				598A98062B1C92A00041EB31 /* Scan */,
 				598A97F12B1B285B0041EB31 /* Logo */,
@@ -514,6 +537,7 @@
 				5964A59B2B2DAE770004C53D /* FlexibleSteppedProgressBarView.xib in Resources */,
 				598A98152B231AAE0041EB31 /* WaitStatusView.xib in Resources */,
 				598C118F2B1201D4008B6005 /* VerificationCodeTextFieldView.xib in Resources */,
+				590250D72B68BBB30002E76C /* ProfileDetail.storyboard in Resources */,
 				598C11322B0A011F008B6005 /* Main.storyboard in Resources */,
 				598D35142B46A1BC00B4B7CF /* StoreInfoTableViewProfileHeaderView.xib in Resources */,
 				597659E52B676F6400E844D4 /* AddSuccess.xib in Resources */,
@@ -587,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590250D52B68BB6F0002E76C /* ProfileDetailVC.swift in Sources */,
 				5964A58F2B2D90E00004C53D /* CalculateView.swift in Sources */,
 				598C114B2B0A0D9E008B6005 /* Common.swift in Sources */,
 				590250CC2B68B1DD0002E76C /* ProfileHeaderView.swift in Sources */,
@@ -598,6 +623,7 @@
 				598C11802B11F9B1008B6005 /* VerificationCodeVC.swift in Sources */,
 				590250C62B68AA600002E76C /* ProfileTableFooterView.swift in Sources */,
 				597659E72B67830000E844D4 /* ProfileTableViewDefaultCell.swift in Sources */,
+				590250DD2B68C5310002E76C /* ProfileDetailModel.swift in Sources */,
 				598D35262B46B1B700B4B7CF /* StoreInfoTableViewCell.swift in Sources */,
 				598C11412B0A021B008B6005 /* MainRootVC.swift in Sources */,
 				598D35162B46A80300B4B7CF /* StoreInfoTableViewHeaderView.swift in Sources */,
@@ -610,6 +636,7 @@
 				5929D2072B5A6C2B00F6C79D /* TagsTableViewCell.swift in Sources */,
 				598C112B2B0A011F008B6005 /* AppDelegate.swift in Sources */,
 				590250D02B68B67F0002E76C /* ProfileTableViewSwtichCell.swift in Sources */,
+				590250D92B68C25C0002E76C /* ProfileDetailDefaultTableViewCell.swift in Sources */,
 				598D35282B46B71F00B4B7CF /* BusinessTimeCurrentDayTableViewCell.swift in Sources */,
 				598C118D2B120183008B6005 /* VerificationCodeTextFieldView.swift in Sources */,
 				598C11432B0A0BBB008B6005 /* Extension.swift in Sources */,
@@ -617,6 +644,7 @@
 				59E8A62A2B259AD4005E58A2 /* ADTableViewCell.swift in Sources */,
 				5964A5972B2D9D190004C53D /* FilterModel.swift in Sources */,
 				5964A58A2B2D7D420004C53D /* FilterVC.swift in Sources */,
+				590250DB2B68C2A50002E76C /* ProfileDetailVerifyTableViewCell.swift in Sources */,
 				590250D22B68B68F0002E76C /* ProfileTableViewLabelCell.swift in Sources */,
 				598D35102B46945900B4B7CF /* StoreInfoIntroduceTableViewCell.swift in Sources */,
 				598C11852B11FB35008B6005 /* WaitingListVC.swift in Sources */,

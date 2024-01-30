@@ -39,6 +39,18 @@ class ProfileVC: CustomRootVC {
 
 extension ProfileVC: UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        switch row {
+        case 0:
+            if let VC = UIStoryboard(name: "ProfileDetail", bundle: nil).instantiateViewController(withIdentifier: "ProfileDetail") as? ProfileDetailVC, let navigation = self.navigationController {
+                pushVC(targetVC: VC, navigation: navigation)
+            }
+        default:
+            print(row)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let profileTableFooterView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ProfileTableFooterView") as! ProfileTableFooterView
         profileTableFooterView.contentView.backgroundColor = .white
